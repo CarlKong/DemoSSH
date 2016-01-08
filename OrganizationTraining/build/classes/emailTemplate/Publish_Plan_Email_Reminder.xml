@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SYSTEM>
+<Email>
+    <subject> <![CDATA[[Training] %masterName% published an %planType% plan "%planName%"]]></subject>
+    <content>
+        <![CDATA[ 
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">	
+			<HTML><HEAD>
+			<META http-equiv=Content-Type content="text/html; charset=gb2312">
+			<META content="MSHTML 6.00.6000.17063" name=GENERATOR>
+			<STYLE>
+			TABLE {
+				BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BORDER-COLLAPSE: collapse
+			}
+			TH {
+				BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BACKGROUND: #b8cce4; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; PADDING: 5PX;
+			}
+			TD {
+				BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; PADDING: 5PX;
+			}
+			.courseName{
+ 				min-width:150px;
+			}
+			
+		</STYLE>
+		</HEAD>
+		<BODY bgColor=#ffffff>
+		<DIV style="width:700">
+		<DIV><FONT face=Arial size=2>Hi all, </FONT></DIV>
+		<BR>
+		<DIV><FONT face=Arial size=2>This mail is from %projectName% system. %invitedOrPublicMsg% </FONT>
+		<BR>
+		<DIV><FONT face=Arial color=#000 size=2><STRONG>Training Master: </STRONG>%masterName%</FONT></DIV>
+		<DIV><FONT face=Arial color=#000 size=2><STRONG>Plan Duration: </STRONG>%startTime% %tilde% %endTime%</FONT></DIV>
+		</DIV>
+        ]]>
+        <![CDATA[ 
+        <BR>
+        <DIV><FONT face=Arial color=#000 size=2>Course Schedule:</FONT></DIV>
+        ]]>
+        <![CDATA[
+            <TABLE border=1>
+  			<TBODY>
+ 			 <TR>
+    			<TH><FONT face=Arial size=2>Course Name</FONT></TH>
+    			<TH><FONT face=Arial size=2>Room</FONT></TH>
+    			<TH><FONT face=Arial size=2>Time</FONT></TH>
+    			<TH><FONT face=Arial size=2>Trainer</FONT></TH></TR>
+    		  %TRs%
+    		</TBODY>
+    		</TABLE>
+
+        ]]>
+        <![CDATA[
+			<SPAN><FONT face=Arial size=2>%endMsg%</FONT></SPAN> 
+        ]]>
+        <![CDATA[
+           <BR>
+           <DIV><FONT face=Arial size=2>%contactMsg%</FONT></DIV>
+        ]]>
+        <![CDATA[
+           <BR/>
+           <DIV><FONT face=Arial size=2>Regards,</FONT></DIV>
+		   <DIV><FONT face=Arial size=2>%projectName%</FONT></DIV></DIV></BODY></HTML>
+        ]]>
+    </content>
+    <trTemplate>
+      <![CDATA[
+      		<TR>
+    			<TD><FONT face=Arial size=2>%CourseName%</FONT></TD>
+    			<TD><FONT face=Arial size=2>%Room%</FONT></TD>
+   			    <TD><FONT face=Arial size=2>%Time%</FONT></TD>
+    			<TD><FONT face=Arial size=2>%Trainer%</FONT></TD>
+    		</TR>
+      ]]>
+    </trTemplate>
+</Email>
