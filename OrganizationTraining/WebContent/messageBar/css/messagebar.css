@@ -1,0 +1,54 @@
+.message_board{
+	background-color: #FEFFE5;
+	border:1px solid #F9F2A7;
+    text-align: center;
+	position: absolute;
+	z-index: 999;
+}
+.message_content{
+    display: inline-block;
+	text-align: center;
+	height:100%;
+}
+.message_notice{
+    display:inline-block;
+	font-family: Arial;
+	font-size: 14px;
+	color: #D4A639;	
+	line-height: 100%;
+	max-width:93%;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.message_id{
+	display:inline-block;
+	font-family: Arial;
+	font-size: 14px;
+	color: #D4A639;
+    line-height: 100%;
+    font-weight: bold;	
+}
+.close_btn{
+	display:inline-block;
+	height:100%;
+	width:30px;
+	float: right;
+	line-height:100%;
+}
+.close_img{
+	background-image: url("../image/ICN_Close_11x11.png");
+    cursor: pointer;
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+}
+.close_hover_img{
+	background-image: url("../image/ICN_Close_Hover_13x13.png");
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+	
+}

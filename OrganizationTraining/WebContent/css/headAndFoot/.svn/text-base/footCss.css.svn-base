@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.bottom_body {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 40px;
+}
+
+.bottom_body .bottom_space {
+    height: 20px;
+    width: 1000px;
+}
+
+.bottom_body .bottom_copyright {
+    height: 20px;
+    width: 1000px;
+    text-align: center;
+    background: url("../../image/headIMG/IMG_Footer_1000x20.png") no-repeat;
+}
+
+.bottom_body .bottom_copyright a {
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+    color: #FFFFFF;
+    height: 20px;
+    width: 1000px;
+    line-height: 20px;
+}

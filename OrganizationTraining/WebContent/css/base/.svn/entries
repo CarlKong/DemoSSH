@@ -1,0 +1,52 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/css/base
+http://192.168.1.100/InternalApp/svn
+
+
+
+2012-12-18T02:19:14.952724Z
+23827
+sherry.zhang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+base.css
+file
+
+
+
+
+2013-06-27T03:14:13.349919Z
+a7f08836884ef7abab9012df9b21d412
+2012-12-18T02:19:14.952724Z
+23827
+sherry.zhang
+
+resetCss.css
+file
+
+
+
+
+2013-06-27T03:14:13.349919Z
+fd501bfcb20c32d9406310a0ba4eda02
+2012-08-16T06:45:34.240933Z
+13526
+tanner.cai
+

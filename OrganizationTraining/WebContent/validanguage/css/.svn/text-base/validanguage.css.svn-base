@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+.failedField{
+    border: 1px solid #ff0000 !important;
+    border-radius: 3px !important;
+}
+
+#vdErrorDiv{
+    position: absolute;
+    top: 110px;
+    left: 1010px;
+    border: 2px solid red;
+    min-height: 80px;
+    min-width: 150px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+#tooTipDiv{
+    position:  absolute;
+    min-height: 20px;
+    min-width: 40px;
+    max-width: 460px;
+    height: auto;
+    width: auto;
+    border: 1px solid #ff9f72;
+    background-color: #feffe5;
+    border-radius: 5px;
+	z-index: 1000;
+}
+
+#tooTipDiv .tooTipDiv_title span{
+    padding: 10px;
+    color: #ff6418;
+	display: block;
+}
+
+#tooTipDiv .tooTipDiv_img {
+    position: absolute;
+	width: 30px;
+	height: 10px;
+	top: -10px;
+	background-image: url('../img/IMG_Arrow_30x10.png');
+	color: #ff9f72
+}
+
+#vdErrorDiv strong{
+    display: block;
+    padding-top: 10px;
+}
+
+#tooTipDiv div{
+    text-align: justify;
+}
+
+#vdErrorList li{
+    list-style-type: none;
+    text-align: left;
+}

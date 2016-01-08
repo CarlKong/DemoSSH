@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+
+.courseContent {
+	padding: 20px 0;
+}
+
+#courseBriefDiv {
+	padding: 2px 2px 2px 2px;
+	width: 458px;
+}
+
+#course_brief_height {
+	height: 140px;
+}
+
+#courseBrief {
+	width: 446px;
+	height: 111px;
+}
+
+#courseTargetPeople {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 450px;
+	height: 70px;
+}
+
+#course_targetTrainee_height {
+	height: 70px;
+}
+
+#courseDuration {
+	width: 34px;
+	margin-right: 6px;
+}
+
+#tagDiv {
+	width: 456px;
+}
+
+#line_content_tag {
+	height: 74px;
+}
+
+#line_tag_notice {
+	display: block;
+	position: relative;
+	padding: 5px 0;
+}
+
+#common_tag_span {
+	color: #555555;
+	margin-right: 10px;
+}
+
+.common_tag_pice {
+	margin: 0 5px;
+}
+
+#common_tag_content a {
+	color: #418FB5;
+}
+
+#course_add_attachment {
+	display: inline-block;
+	height: 29px;
+	color: #418FB5;
+	line-height: 30px;
+}
+
+#course_type_line {
+	height: auto;
+}
+
+.course_attachmentList {
+	margin-left: 160px;
+}

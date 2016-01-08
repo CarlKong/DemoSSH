@@ -1,0 +1,93 @@
+body {
+	
+}
+
+.table_header{
+	float: left;
+    color: #FFF;
+    font:bold 14px arial;
+    line-height: 30px;
+    background-image: url(../../image/dashboardIMG/IMG_ListTitle_Middle_1x30.png);
+}
+
+.table_header_left_corner{
+	float: left;
+    width: 5px;
+    height: 30px;
+    background: url(../../image/dashboardIMG/IMG_ListTitle_Left_5x30.png) no-repeat 50% 50%;
+}
+.table_header_right_corner{
+	float:left;
+    width: 5px;
+    height: 30px;
+    background: url(../../image/dashboardIMG/IMG_ListTitle_Right_5x30.png) no-repeat 50% 50%;   
+}
+
+.table_header_theme{
+    float: left;
+}
+
+.table_header_left{
+    float: left;
+    text-align: left;
+    height: 30px;
+    width: 500px;
+    margin-left: 5px;
+}
+
+.table_second_header_20 {
+    background: url(../../image/dashboardIMG/IMG_Title_3_1x20.png);
+    height: 20px;
+    display: inline-block;
+}
+
+.table_second_title {
+    font:bold 14px arial;
+    color: #71B3D6;
+    text-align: center;
+    line-height: 20px;
+}
+
+.table_second_more_20 {
+	font: 13px arial;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+.content_row {
+	display: block;
+    height: 20px;
+    font: 12px arial;
+    color: #555;
+}
+
+.content_title {
+    font: bold 14px arial;
+    color: #71B3D6;
+    background-image: url(../../image/dashboardIMG/IMG_Title_3_1x20.png);
+}
+
+.red {
+	width: 10px;
+    height: 20px;
+    background: url(../../image/dashboardIMG/IMG_Red_6x16.png) no-repeat 2px 2px ;
+}
+
+.green {
+    width: 10px;
+    height: 20px;
+    background: url(../../image/dashboardIMG/IMG_Green_6x16.png) no-repeat 2px 2px ;
+}
+
+.yellow {
+    width: 10px;
+    height: 20px;
+    background: url(../../image/dashboardIMG/IMG_Yellow_6x16.png) no-repeat 2px 2px ;
+}
+
+.gray {
+    width: 10px;
+    height: 20px;
+    background: url(../../image/dashboardIMG/IMG_Gray_6x16.png) no-repeat 2px 2px ;
+}

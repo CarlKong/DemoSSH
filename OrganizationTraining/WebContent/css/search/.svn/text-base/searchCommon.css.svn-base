@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+
+.dataList {
+	background-color: #FFFFFF;
+}
+
+#searchCondition {
+	float: left;
+	margin: 20px 0px 0px 10px
+}
+
+#searchCondition a {
+	cursor: pointer;
+    color: #418FB5;
+}
+
+#keyword {
+	color: #555;
+}
+
+a.viewDetail {
+    cursor: pointer;
+    color: #418FB5;
+}
+
+.dateInput {
+	width: 78px;
+    height: 10px; /* height = font-size+2, line-height = height+1, real_height = padding-top+padding-button+2+height*/
+    line-height: 17px;
+    padding: 6px 2px;
+}
+
+#searchButton{
+	left: 50px;
+	vertical-align: top;
+}
+
+.dateLine {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.condition_optional .dateP {
+	margin-right: 0px;
+}
+
+.message_span {
+	display: none;
+}
+
+.showImag {
+	width: 16px;
+	height: 16px;
+	margin-top: 5px;
+}
+
+.downloadImag {
+	margin-top: 7px;
+}
+
+#downLoadPopup {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 505;
+}
+
+#downLoadDiv {
+	position: relative;
+	width: 525px;
+}
+
+#downClosePic {
+	position: absolute;
+	top: 9.5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+#downLoadContent{
+	display: block;
+	width: 525px;
+}
+
+.inputTipDiv{
+	margin-left:7px;
+	margin-top:4px;
+	position:absolute;
+	color:#BFBFBF;
+}
+
+/*status used in my plan or my course page*/
+.red {
+    background: url(../../image/dashboardIMG/IMG_Red_6x24.png) no-repeat 2px 2px ;
+}
+
+.green {
+    background: url(../../image/dashboardIMG/IMG_Green_6x24.png) no-repeat 2px 2px ;
+}
+
+.yellow {
+    background: url(../../image/dashboardIMG/IMG_Yellow_6x24.png) no-repeat 2px 2px ;
+}
+
+.gray {
+    background: url(../../image/dashboardIMG/IMG_Gray_6x24.png) no-repeat 2px 2px ;
+}

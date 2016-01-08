@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-2.5.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.augmentum.ot">
+    	<context:include-filter type="annotation"
+    							expression="org.aspectj.lang.annotation.Aspect"/>
+    </context:component-scan>
+    <aop:aspectj-autoproxy/>
+    <!-- 此处的“属性占位符配置者”就是读取我们项目中的属性，以便于在xml中用${key}替换指定的properties文件中的值 -->
+    <bean
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+                <value>classpath:hibernate_search.properties</value>
+				<value>classpath:ot.properties</value>
+				<value>classpath:mail.properties</value>
+            </list>
+        </property>
+    </bean>
+    <!-- Spring帮助我们管理数据库连接的属性配置 -->
+    <bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="${dbcp.maxActive}"/>
+        <property name="minIdle" value="${dbcp.minIdle}"/>
+        <property name="maxIdle" value="${dbcp.maxIdle}"/>
+        <property name="initialSize" value="${dbcp.initialSize}"/>
+        <property name="maxWait" value="${dbcp.maxWait}"/>
+        <property name="logAbandoned" value="${dbcp.logAbandoned}"/>
+        <property name="removeAbandoned"  value="${dbcp.removeAbandoned}"/>
+		<property name="removeAbandonedTimeout" value="${dbcp.removeAbandonedTimeout}"/>
+        <property name="validationQuery" value="${dbcp.validationQuery}"/>
+        <property name="testOnBorrow" value="${dbcp.testOnBorrow}"/>
+        <property name="testOnReturn" value="${dbcp.testOnReturn}"/>
+        <property name="testWhileIdle" value="${dbcp.testWhileIdle}"/>
+        <property name="timeBetweenEvictionRunsMillis" value="${dbcp.timeBetweenEvictionRunsMillis}"/>
+        <property name="numTestsPerEvictionRun" value="${dbcp.numTestsPerEvictionRun}"/>
+        <property name="minEvictableIdleTimeMillis" value="${dbcp.minEvictableIdleTimeMillis}"/>
+    </bean>
+    <!-- Spring帮助我们管理sessionFactory -->
+    <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan">
+             <list>
+                <value>com.augmentum.ot.model</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				
+                <!-- Hibernate search Lucene index directory config -->
+                <prop key="hibernate.search.default.directory_provider">${hibernate.search.default.directory_provider}</prop>
+                <prop key="hibernate.search.default.indexBase">${hibernate.search.default.indexBase}</prop>
+                <prop key="hibernate.search.worker.batch_size">${hibernate.search.worker.batch_size}</prop>
+                <prop key="hibernate.search.indexing_strategy">${hibernate.search.indexing_strategy}</prop>
+                <!-- <prop key="hibernate.search.indexing_strategy">manual</prop> -->
+
+
+            <!-- <prop key="current_session_context_class">${current_session_context_class}</prop> -->
+            </props>
+        </property>
+        
+    </bean>
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl" scope="singleton">
+		<property name="host">
+			<value>${mail.host}</value>
+		</property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">${mail.auth}</prop>
+			</props>
+		</property>
+
+		<property name="username">
+			<value>${mail.username}</value>
+		</property>
+
+		<property name="password">
+			<value>${mail.password}</value>
+		</property>
+		<property name="defaultEncoding">
+			<value>${mail.encoding}</value>
+		</property>
+	</bean>
+    <!--config spring timer for course history trainer begin...-->
+	<bean id="updateTimer" class="com.augmentum.ot.timer.ScanTrainerTimer">
+	</bean>
+	<bean id="jobtask"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="updateTimer" />
+		</property>
+		<property name="targetMethod">
+			<value>performTimer</value>
+		</property>
+	</bean>
+	<bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="jobtask" />
+		</property>
+		<property name="cronExpression">
+		<value>${timer.historyTrainer.updateTime}</value>
+		</property>
+	</bean>
+	<bean id="startQuertz" lazy-init="false" autowire="no"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="doTime" />
+			</list>
+		</property>
+	</bean>
+	<!--config spring timer for course history trainer end...-->
+	
+	<!-- 声明一个 Hibernate 3 的 事务管理器供代理类自动管理事务用 -->
+    <bean id="txManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <aop:config>
+        <aop:pointcut id="bussinessService"
+            expression="execution(public * com.augmentum.ot.service..*.*(..))" />
+        <aop:advisor pointcut-ref="bussinessService" advice-ref="txAdvice" />
+    </aop:config>
+    <!-- 声明自动为spring容器中那些配置@aspectJ切面的bean创建代理，织入切面。 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <tx:method name="list*" read-only="true" /> 
+            <tx:method name="find*" read-only="true" />
+            <tx:method name="get*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+            <tx:method name="delete*" propagation="REQUIRED" rollback-for="com.augmentum.ot.exception.ServerErrorException;" />
+            <tx:method name="update*" propagation="REQUIRED" rollback-for="com.augmentum.ot.exception.ServerErrorException;" />
+            <tx:method name="create*" propagation="REQUIRED" rollback-for="com.augmentum.ot.exception.ServerErrorException;" />
+            <tx:method name="save*" propagation="REQUIRED" rollback-for="com.augmentum.ot.exception.ServerErrorException;" />
+            <tx:method name="cancel*" propagation="REQUIRED" rollback-for="com.augmentum.ot.exception.ServerErrorException;" />
+        </tx:attributes>
+    </tx:advice>
+</beans>

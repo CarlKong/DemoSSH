@@ -1,0 +1,342 @@
+@CHARSET "UTF-8";
+
+.courseListHead {
+    width: 940px;
+}
+
+.headLeft {
+    background:url(../../image/plan/selectCourse/IMG_ListTitle_Left_5x30.png) no-repeat;
+}
+
+.headRight {
+    background:url(../../image/plan/selectCourse/IMG_ListTitle_Right_5x30.png) no-repeat;
+}
+
+.headLeft, .headRight {
+    display:inline-block;
+    height:30px;
+    width:5px;
+    float:left;
+}
+
+.titleBackGroud {
+	font-family:Arial Bold;
+	font-weight:Bold;
+    font-size:14px;
+    background:url(../../image/plan/selectCourse/IMG_ListTitle_Middle_1x30.png) repeat-x;
+    color:#FFFFFF;
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    float: left;
+}
+
+.sortTitle {
+    width: 25px;
+}
+
+.noLabel {
+    width: 30px;
+}
+
+.nameLabel {
+    width: 340px;
+}
+
+.actualCourseName {
+	color: #418FB5;
+    cursor: pointer;
+}
+
+.actualCourseName, .courseNameDisable {
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 340px;
+	display: inline-block;
+}
+
+.planCourseNameSpan {
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    color:#418FB5;
+    width:100px;
+    display: inline-block;
+}
+	
+.roomLabel {
+    width: 65px;
+}
+
+.dateLabel {
+	width: 95px;
+}
+
+.dateTitleLabel {
+	width: 95px;
+}
+
+.startLabel {
+	width: 70px;
+}
+
+.finishLabel {
+	width: 65px;
+}
+
+.durationLabel {
+	width: 40px;
+}
+
+.trainerLabel {
+	width: 125px;
+}
+
+.actionLabel {
+	text-align:center;
+	width: 75px;
+}
+
+.clear {
+    clear: both;
+}
+
+.courseListDataBg {
+	width: 940px;
+	max-height: 60px;
+}
+
+.courseListData {
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#555555;
+    background:url(../../image/plan/selectCourse/IMG_List_1x30.png) repeat-x;
+    float: left;
+}
+
+.noShowLabel {
+    width: 30px;
+    text-align: center;
+}
+
+.noShowLabelDisable, .courseNameDisable, .inputDisable, .settingLabelDis {
+	color: #bfbfbf;
+}
+
+.actionShowLabel {
+	vertical-align:middle;
+    width: 80px;
+}
+
+#planCourseList {
+	display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.roomInput, .dateInputText, .startInputText, .finishInput, .trainerInput {
+    height:23px;
+    margin-top:2px;
+}
+
+.roomInput {
+    width: 45px;
+}
+
+.dateInputText {
+    width: 75px;
+}
+
+.startInputText {
+    width: 40px;
+}
+
+.finishInput {
+    width: 40px;
+}
+
+.trainerInput {
+    width: 110px;
+}
+
+.removePlanCourse, .removeDisable {
+	margin-top:7px;
+	margin-right:18px;
+    border: 0;
+	background: url(../../image/plan/selectCourse/ICN_Delete_16x17.png);
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	float: right;
+}
+.removePlanCourse:HOVER {
+	background: url(../../image/plan/selectCourse/ICN_Delete_Hover_16x17.png);
+}
+
+.removeDisable {
+	background: url(../../image/plan/selectCourse/ICN_Delete_Disable_16x16.png);
+}
+
+.toTag {
+	margin-left:4px;
+    width: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #555;
+    height: 4px;
+    display: inline-block;
+}
+
+.dragButtonSpan {
+	width: 30px;
+	text-align: center;
+}
+
+.dragButtonDisable, .dragButton {
+	margin-top:9px;
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height:13px;
+}
+
+.dragButtonDisable {
+	background: url(../../image/plan/selectCourse/ICN_Drag_16x13.png);
+}
+
+.dragButton {
+	background: url(../../image/plan/selectCourse/ICN_Drag_Active_16x13.png);
+}
+
+.settingButton, .settingActive {
+	margin-left:20px;
+	margin-top:7px;
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height:16px;
+	float: left;
+}
+	
+.settingButton {
+	background: url(../../image/plan/selectCourse/ICN_Setting_16x16.png);
+}
+
+.settingActive {
+	background: url(../../image/plan/selectCourse/ICN_Setting_Active_16x16.png);
+}
+
+.settingDiv {
+	background: url(../../image/plan/selectCourse/IMG_Expand_700x35.png) no-repeat;
+    height: 35px;
+    width: 700px;
+    display: none;
+    position: relative;
+    top: -5px;
+}
+
+.settingLeft, .settingRight {
+    height: 30px;
+    width: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.assessLabelEn {
+	color: #555555;
+}
+
+.assessLabel, .assessment{
+    height: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.assessLabel {
+	line-height:40px;
+	width: 95px;
+    padding-left:55px;
+}
+
+.assessment{
+	width: 535px;	
+}
+
+.checkBox1 {
+    float: left;
+    margin-top: 13px;
+}
+
+.checkLabel {
+	float: left;
+	margin-left: 10px;
+	line-height: 40px;
+	height: 30px;
+}
+.checkBox2 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.dragDiv {
+	height: 34px;
+	width: 708px;
+}
+
+.dragLeft, .dragMid, .dragRight {
+    height: 34px;
+    float: left;
+    display: inline-block;
+    padding-top:4px;
+}
+
+.dragLeft {
+    width: 4px;
+    background: url(../../image/plan/selectCourse/IMG_DragCourse_Left_8x38.png);
+}
+
+.dragRight {
+	width: 4px;
+    background: url(../../image/plan/selectCourse/IMG_DragCourse_Right_8x38.png);
+    background-position: -4px,0;
+}
+
+.dragMid {
+	width: 700px;
+    background: url(../../image/plan/selectCourse/IMG_DragCourse_Middle_1x38.png) repeat-x;
+}
+
+.placeholder {
+    width: 700px;
+    display: inline-block;
+    background: url(../../image/plan/selectCourse/IMG_Gap_700x10.png);
+    height: 10px;
+}
+.realNameSpan{
+	display: none;
+}
+
+.assessment_checkbox {
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+
+.changeDiv {
+	display: inline-block;
+}
+
+.selected_checkbox_disable {
+	background: url("../../image/plan/selectCourse/ICN_SelectCheckbox_Disable_14x15.png") no-repeat;
+}
+
+.unselected_checkbox_disable {
+	background: url("../../image/plan/selectCourse/ICN_Checkbox_Disable_14x15.png") no-repeat;
+}

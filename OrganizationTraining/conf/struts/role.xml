@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+  	<package name="roleList" extends="basePackage" namespace="/roleList">
+		<action name="roleList_*">
+			<result>/WEB-INF/roleList/{1}.jsp</result>
+		</action>
+		<action name="searchRoleList" class="roleListAction" method="searchRoleList">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="saveRoleList" class="roleListAction" method="saveRoleList">
+			<result type="json"></result>
+			<result type="json" name="error_server"></result>
+			<result type="json" name="data_warning"></result>
+		</action>
+	</package>
+</struts>

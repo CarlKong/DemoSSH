@@ -1,0 +1,78 @@
+#master_to_trainer_content_value {
+	width: 780px;
+	border-bottom: 1px solid #C0E1ED;
+	color: #71B3D6;
+	opacity: 1;
+	background-color: #eaf5f9;
+	border-radius: 2px;
+	padding-bottom: 8px;
+	margin-bottom: 13px;
+	display: inline-block;
+}
+
+.to_trainer_master_name {
+	width: 150px;
+	margin-left: 10px;
+	margin-top: 8px;
+	float: left;
+	font-weight: bold;
+}
+
+#master_to_trainer_content {
+    width: 780px;
+	margin-left: 6px;
+}
+
+.to_trainer_master_item_content {
+	margin-top: 10px;
+}
+
+.to_trainer_master_item{
+	width: 150px;
+	margin-top: 8px;
+	display: inline-block;
+}
+
+.to_trainer_master_item_score {
+    margin-right: 10px;
+	margin-top: 10px;
+    display: inline-block;
+}
+
+#to_trainer_from_trainee_subtitle {
+    margin-top: 20px;
+}
+
+.planCourse_title {
+	margin-left: 10px;
+	max-width: 740px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float:left;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.trainee2Trainer_summary {
+	margin-top: 0px !important;
+	padding-bottom: 5px !important;
+	padding-top: 0px !important;
+}
+
+#master_to_trainer_comments {
+	margin-left: 10px;
+}
+
+.trainees_to_trainer_assessment_courseContent {
+	display: inline-block;
+}
+
+.trainees_to_trainer_assessment_courseContent>.no_assessed {
+	margin-left: 16px;
+}
+
+.traineeToTrainer_average_content {
+	display: inline-block;
+}

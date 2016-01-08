@@ -1,0 +1,52 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/js/login
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-27T02:18:55.647167Z
+28715
+jackson.mu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+md5.js
+file
+
+
+
+
+2013-06-27T03:14:15.033877Z
+b63ff39aa1ee38d5fa50fde1167f1175
+2013-03-27T02:18:55.647167Z
+28715
+jackson.mu
+
+login.js
+file
+
+
+
+
+2013-06-27T03:14:15.033877Z
+e81be7404a2b7885b5b3d22f15b292c5
+2013-03-27T02:18:55.647167Z
+28715
+jackson.mu
+

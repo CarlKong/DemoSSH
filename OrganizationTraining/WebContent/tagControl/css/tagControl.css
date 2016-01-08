@@ -1,0 +1,98 @@
+div.tagControl {
+    border-color: #BFBFBF;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    -webkit-box-shadow: inset 0 0 5px #BFBFBF;
+    -webkit-border-radius: 2px;
+    -moz-box-shadow: inset 0 0 5px #BFBFBF;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 5px #BFBFBF;
+    width: 448px;
+    height: 22px;
+    padding: 4px 2px;
+    background-color: #ffffff;
+    cursor: text;
+}
+
+div.radius_shadow {
+    border: 1px solid #ff9f72;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 10px #414141;
+    -moz-box-shadow: 0 0 10px #414141;
+    box-shadow: 0 0 10px #414141;
+    font-size: 12px;
+    background: #fff;
+    background-color: #feffe5;
+    color: #ff6418;
+    z-index: 9999;
+}
+
+span.tag_radius {
+	display: inline-block;
+    margin: 0 3px;
+    padding: 2px 3px;
+    height: 16px;
+    background-color: #EFF2F7;
+    color: black;
+    cursor: default;
+    border: 1px solid #CCD5E4;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+span.tag_radius>label {
+	display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+}
+span.heightlight {
+    background-color: #5670A6;
+    color: #ffffff;
+}
+.tagControl>.taginput {
+    border: 0;
+    outline: none;
+    border-color: #BFBFBF;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	height: 16px;
+	padding: 3px 5px;
+	vertical-align: top;
+}
+
+a.deltag {
+    cursor: pointer;
+    display: inline-block;
+    color: #a6b3cf;
+    margin-left: 5px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+a.deltag:hover {
+    color: #D2D2D2;
+    text-decoration: none;
+}
+
+span.selected_tag{
+    background-color: blue;
+}
+
+#getTab {
+    margin-top: 10px;
+    border: 1px solid #E0E0E0;
+    background-color: #F0F0F0;
+    padding: 10px;
+    cursor: pointer;
+}

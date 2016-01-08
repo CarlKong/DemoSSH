@@ -1,0 +1,45 @@
+.plan_layout_line {
+	padding-bottom: 10px;
+	position: relative;
+	width: 960px;
+	margin: auto;
+}
+
+.plan_layout_line1 {
+	font-family: Arial;
+	font-size: 14px;
+	color: #418FB5;
+}
+
+.plan_layout_line2 {
+	font-family: Arial;
+	font-size: 14px;
+	color: #555555;
+	font-weight: bold;
+}
+
+.execute_button {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.create_plan_button {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	background-image: url("../../image/buttonIMG/BTN_Create_80x30.png");
+}
+
+.cancel_plan_button {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	margin-left: 20px;
+	background-image: url("../../image/buttonIMG/BTN_Cancel_80x30.png");
+}
+
+#planBriefEditor {
+	width: 446px;
+	height: 113px;
+}

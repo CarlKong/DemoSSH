@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+
+.content_layout_line {
+	width: 960px;
+	margin-bottom: 20px;
+}
+
+.line_content {
+	position: relative;
+	margin-left: 160px;
+	vertical-align: top;
+}
+
+.view_line_height {
+	height: 16px;
+}
+
+.line_content_left {
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.line_content_span {
+	font-weight: bold;
+	color: #555555;
+}
+
+.line_content_right {
+	width: 460px;
+	position: relative;
+	display: inline-block;
+	margin-left: -4px;
+	word-wrap: break-word;
+}
+
+.common_radio {
+	height: 20px;
+	line-height: 21px;
+	padding-bottom: 10px;
+}
+
+#common_radio_last {
+	padding-bottom: 0;
+}
+
+.common_radio LABEL {
+	display: inline-block;
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	background: url("../../image/commonIMG/ICN_Radio_14x14.png") transparent
+		no-repeat;
+	margin-right: 10px;
+}
+
+.common_radio span {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.typeValue_span {
+	margin-right: 40px;
+}
+
+.common_radio LABEL.checked {
+	background: url("../../image/commonIMG/ICN_Radio_Active_14x14.png")
+		transparent no-repeat;
+}
+
+.radio_type_input {
+	display: none;
+}
+
+.common_checkbox {
+	display: inline-block;
+    cursor: pointer;
+    width:14px;
+    height:15px;
+    vertical-align: text-bottom;
+}
+
+.common_checkbox_checked {
+	background: url("../../image/commonIMG/ICN_Checkbox_Active_14x15.png")
+		transparent no-repeat;
+}
+
+.common_checkbox_unchecked {
+	background: url("../../image/commonIMG/ICN_Checkbox_14x15.png")
+		transparent no-repeat;
+}
+
+.common_checkbox_active_disable {
+	background:
+		url("../../image/commonIMG/ICN_Checkbox_Active_Disable_14x15.png")
+		transparent no-repeat;
+}
+
+.common_radio_comfirmBar {
+	display: inline-block;
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	margin-right: 20px;
+	vertical-align: text-bottom;
+}
+
+.common_radio_checked {
+	background: url("../../image/commonIMG/ICN_Radio_Active_14x14.png")
+		transparent no-repeat;
+}
+
+.common_radio_unchecked {
+	background: url("../../image/commonIMG/ICN_Radio_14x14.png") transparent
+		no-repeat;
+}
+
+.common_radio_active_disable {
+	background: url("../../image/commonIMG/ICN_Radio_Active_14x14.png")
+		transparent no-repeat;
+}
+

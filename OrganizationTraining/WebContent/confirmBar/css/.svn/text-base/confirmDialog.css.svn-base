@@ -1,0 +1,60 @@
+/*modify whole dialog's style*/
+.ui-dialog { background-color: #FFFFFF;}
+
+/*modify background color of head*/
+.ui-widget-header { border: 1px solid #71B3D6; background: #71B3D6; color: #FFFFFF; font-weight: bold; }
+
+/*modify site of title*/
+.ui-dialog .ui-dialog-titlebar { border: 0; }
+.ui-dialog .ui-dialog-titlebar-close { width: 11px; height: 11px; background-image: url("../images/ICN_Close_11x11.png"); padding: 0px; position: absolute; right: 0; top: 50%; margin: -5px 10px 0 0; }
+.ui-dialog .ui-dialog-titlebar-close span { display: none; margin: 10px;}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { border: 0; background: url("../images/ICN_Close_11x11.png") 50% 50% repeat-x; }
+
+/*modify font of title*/
+.ui-widget { font-family: Arial, Trebuchet MS, Tahoma, Verdana, sans-serif; font-size: 1.1em; }
+.ui-dialog .ui-dialog-title { font-size: 17px; font-weight: bold; }
+
+/*modify content (modify line)*/
+.ui-widget-content { font-family: Arial, Trebuchet MS, Tahoma, Verdana, sans-serif; font-size: 16px; font-weight: normal; color: #555555; background: #FFFFFF}
+.ui-dialog .ui-dialog-content { padding: 0; }
+.ui-dialog .ui-dialog-buttonpane { text-align: center; margin: 0; padding: 0; background-color: #FFFFFF; }
+.confirmContent { margin: 20px 25px; font-size: 14px;}
+
+/*button*/
+.ui-button { width: 80px; height: 30px; }
+.ui-button .ui-button-text { display: block; line-height: 0;  }
+.ui-button-text-only .ui-button-text{ padding:0; }
+
+/* border change*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 0; }
+.ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-focus { border: 0; outline: none; }
+
+/*set button's background*/
+#greenButton { background: url("../images/BTN_Create_80x30.png") 50% 50% repeat-x; font-weight: bold; color: #FFFFFF; }
+#greenButton:hover { background: url("../images/BTN_Create_Hover_80x30.png") 50% 50% repeat-x; font-weight: bold; color: #FFFFFF;  }
+#grayButton { background: url("../images/BTN_Cancel_80x30.png") 50% 50% repeat-x; font-weight: bold; color: #555555; }
+#grayButton:hover { background: url("../images/BTN_Cancel_Hover_80x30.png") 50% 50% repeat-x; font-weight: bold; color: #555555; }
+
+.confirmBar_option{
+	text-align: left;
+}
+
+.radio_div{
+    border-color: #BFBFBF;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    -webkit-box-shadow: inset 0 0 5px #BFBFBF;
+    -webkit-border-radius: 2px;
+    -moz-box-shadow: inset 0 0 5px #BFBFBF;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 5px #BFBFBF;
+}
+
+.option_div{
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    margin: 0 auto;
+}

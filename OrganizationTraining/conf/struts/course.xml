@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="course" extends="basePackage" namespace="/course">
+    	<!-- Find course/xxxx.jsp -->
+    	<action name="course_*" class="findPagesAction">
+			<result name="success">/WEB-INF/course/{1}.jsp</result>
+		</action>
+		
+		<!-- Search Course -->
+    	<action name="searchCourse" method="searchCourse" class="courseAction">
+    		<result type="json" name="success">
+        		<param name="root">jsonObject</param>
+        	</result>
+    	</action>
+    	
+    	<!-- Prepare Search Course -->
+		<action name="preSearchCourse" method="preSearchCourse" class="courseAction">
+			<result>/WEB-INF/course/searchCourse.jsp</result>
+		</action>
+		
+		<!-- Create Course -->
+    	<action name="createCourse" method="createCourse" class="courseAction">
+    		<result name="success" type="redirectAction">
+				<param name="namespace">/course</param>
+				<param name="actionName">viewCourseDetail</param>
+				<param name="courseId">${course.courseId}</param>
+			</result>
+    	</action>
+    	
+    	<!-- View  Course Record Detail -->
+		<action name="viewTheRecordDetail" method="viewNeedRecordDetail" class="courseAction">
+		   <param name="viewType">0</param>
+		   <result name="success" type="redirectAction">
+				<param name="namespace">/course</param>
+				<param name="actionName">viewCourseDetail</param>
+				<param name="courseId">${course.courseId}</param>
+				<param name="previousFlag">${previousFlag}</param>
+				<param name="nextFlag">${nextFlag}</param>
+				<param name="viewType">${viewType}</param> 
+				<param name="fromSearchToViewCondition.totalPageNum">${fromSearchToViewCondition.totalPageNum}</param>
+				<param name="fromSearchToViewCondition.backupId">${fromSearchToViewCondition.backupId}</param>
+				<param name="fromSearchToViewCondition.isNoSelectedflag">${fromSearchToViewCondition.isNoSelectedflag}</param>
+				<param name="fromSearchToViewCondition.nowId">${fromSearchToViewCondition.nowId}</param>
+				<param name="criteria.pageNum">${criteria.pageNum}</param>
+				<param name="criteria.pageSize">${criteria.pageSize}</param>
+				<param name="criteria.sortSign">${criteria.sortSign}</param>
+				<param name="criteria.sortName">${criteria.sortName}</param>
+				<param name="criteria.queryString">${criteria.queryString}</param>
+				<param name="criteria.searchFields">${criteria.searchFields}</param>
+				<param name="criteria.typeIds">${criteria.typeIds}</param>
+				<param name="criteria.isCertificateds">${criteria.isCertificateds}</param>
+				<param name="hasCondition">${hasCondition}</param>  
+			</result><!--  
+    	   <result name="success">/WEB-INF/course/viewCourse.jsp</result>
+		--></action>
+		
+		<!-- Edit  Course -->
+		<action name="toEditCourse" method="toEditCourse" class="courseAction">
+			<result name="success">/WEB-INF/course/editCourse.jsp</result>
+		</action>
+		
+		<!-- View  Next Course Record Detail -->
+		<action name="viewNextRecordDetail" method="viewNeedRecordDetail" class="courseAction">
+		   <param name="viewType">1</param>
+    	   <result name="success">/WEB-INF/course/viewCourse.jsp</result>
+    	   <result name="toEditPage">/WEB-INF/course/editCourse.jsp</result>
+		</action>
+		
+		<!-- View  Previous Course Record Detail -->
+		<action name="viewPreviousRecordDetail" method="viewNeedRecordDetail" class="courseAction">
+		   <param name="viewType">-1</param>
+    	   <result name="success">/WEB-INF/course/viewCourse.jsp</result>
+    	   <result name="toEditPage">/WEB-INF/course/editCourse.jsp</result>
+		</action>
+		
+		<!-- View Course Detail -->
+    	<action name="viewCourseDetail" method="viewCourseDetail" class="courseAction">
+    	   <result name="success">/WEB-INF/course/viewCourse.jsp</result>
+    	   <result name="toEditPage">/WEB-INF/course/editCourse.jsp</result>
+    	</action>
+    	
+    	<!-- Delete Course -->
+    	<action name="deleteCourse" class="courseAction" method="deleteCourse">
+	        <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <result type="json" name="data_warning">
+                <param name="root">jsonObject</param>
+            </result>
+         </action>
+        
+        <!-- Edit Course -->
+        <action name="editCourse" class="courseAction" method="editCourse">
+           <result name="success" type = "redirectAction" >
+				<param name="namespace">/course</param>
+				<param name="actionName">viewCourseDetail</param>
+				<param name="courseId">${course.courseId}</param>
+           </result>
+        </action>
+        
+        <!-- Get Course Attachment -->
+        <action name="getCourseAttachmentsById" class="courseAction" method="getCourseAttachmentsById">
+        	<result type="json" name="success">
+        		<param name="root">jsonArray</param>
+        	</result>
+        </action>
+        
+         <!-- Clear operation in session -->
+        <action name="clearOperation" class="courseAction" method="clearOperation"></action>
+    </package>
+</struts>

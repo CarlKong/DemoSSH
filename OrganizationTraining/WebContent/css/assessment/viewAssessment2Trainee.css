@@ -1,0 +1,67 @@
+#assessed_trainee_or_course {
+	margin-top: 0px;
+}
+
+.to_trainee_item_label {
+    width: 150px;
+    float: left;
+    display: inline;
+    margin-bottom: 8px;
+}
+.to_trainee_item_div_right {
+    float: left;
+}
+
+.to_trainee_item_score_rate {
+    width: 240px;
+}
+
+.second_parent_menu {
+    padding-top: 5px;
+}
+
+.to_trainee_plan_course_name {
+    width: 300px;
+    float: left;
+    font-weight: bold;
+}
+
+.to_trainee_item_score_value {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 40px;
+}
+
+.attendence_logs_count_content, .attendence_logs_count, .attendence_logs_log {
+	float: left;
+}
+
+.attendence_logs_count_content {
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.attendence_logs_count {
+    margin-left: 5px;
+}
+
+.to_trainee_attendence_logs_label, attendence_logs_count {
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.to_trainee_attendence_logs_label {
+	margin-left: 10px;
+}
+
+.trainee_name_span {
+	height: 25px;
+	display: inline-block;
+	float: left;
+	line-height: 25px;
+}
+
+#plan_or_trainee_average_part {
+	display: none;
+}

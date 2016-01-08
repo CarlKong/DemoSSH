@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="plan" extends="basePackage" namespace="/plan">
+    	<action name="plan_*" class="findPagesAction">
+			<result name="success">/WEB-INF/plan/{1}.jsp</result>
+		</action>
+        <action name="createPlan" class="planAction" method="createPlan">
+            <result name="success" type="redirectAction">
+				<param name="namespace">/plan</param>
+				<param name="actionName">viewPlanDetail</param>
+				<param name="planId">${plan.planId}</param>
+			</result>
+        </action>
+        
+        <action name="editPlan" class="planAction" method="editPlan">
+           <result name="success" type = "redirectAction" >
+				<param name="namespace">/plan</param>
+				<param name="actionName">viewPlanDetail</param>
+				<param name="planId">${plan.planId}</param>
+           </result>
+           <result name="error">/WEB-INF/plan/viewPlan.jsp</result>
+        </action>
+        
+        <action name="courseListConfirm" class="planAction" method="courseListConfirm">
+        	<result type="json" name="success">
+        		<param name="root">jsonArray</param>
+        	</result>
+        </action>
+        
+        <action name="searchPlan" class="planAction" method="searchPlan">
+        	<result type="json" name="success">
+        		<param name="root">jsonObject</param>
+        	</result>
+        </action>
+        
+        <action name="searchMyPlan" class="planAction" method="searchMyPlan">
+        	<result type="json" name="success">
+        		<param name="root">jsonObject</param>
+        	</result>
+        </action>
+		
+		<action name="searchMyCourse" class="planAction" method="searchMyCourse">
+        	<result type="json" name="success">
+        		<param name="root">jsonObject</param>
+        	</result>
+        </action>
+        
+		<action name="preSearchPlan" method="preSearchPlan" class="planAction">
+			<result>/WEB-INF/plan/searchPlan.jsp</result>
+		</action>
+		
+        <action name="findActualCoursesByPlanId" class="planAction" method="findActualCoursesByPlanId">
+        	<result type="json" name="success">
+        		<param name="root">jsonArray</param>
+        	</result>
+        </action>
+        
+		<action name="viewTheRecordDetail" method="viewNeedRecordDetail" class="planAction">
+			<param name="viewType">0</param>
+		    <result name="success" type="redirectAction">
+				<param name="namespace">/plan</param>
+				<param name="actionName">viewPlanDetail</param>
+				<param name="planId">${plan.planId}</param>
+				<param name="previousFlag">${previousFlag}</param>
+				<param name="nextFlag">${nextFlag}</param>
+				<param name="viewType">${viewType}</param> 
+				<param name="fromSearchToViewCondition.totalPageNum">${fromSearchToViewCondition.totalPageNum}</param>
+				<param name="fromSearchToViewCondition.backupId">${fromSearchToViewCondition.backupId}</param>
+				<param name="fromSearchToViewCondition.isNoSelectedflag">${fromSearchToViewCondition.isNoSelectedflag}</param>
+				<param name="fromSearchToViewCondition.nowId">${fromSearchToViewCondition.nowId}</param>
+				<param name="criteria.pageNum">${criteria.pageNum}</param>
+				<param name="criteria.pageSize">${criteria.pageSize}</param>
+				<param name="criteria.sortSign">${criteria.sortSign}</param>
+				<param name="criteria.sortName">${criteria.sortName}</param>
+				<param name="criteria.queryString">${criteria.queryString}</param>
+				<param name="criteria.searchFields">${criteria.searchFields}</param>
+				<param name="criteria.planTypeIds">${criteria.planTypeIds}</param>
+				<param name="criteria.planCourseTypeIds">${criteria.planCourseTypeIds}</param>
+				<param name="criteria.publishLowerDate">${criteria.publishLowerDate}</param>
+				<param name="criteria.publishUpperDate">${criteria.publishUpperDate}</param>
+				<param name="criteria.executeLowerDate">${criteria.executeLowerDate}</param>
+				<param name="criteria.executeUpperDate">${criteria.executeUpperDate}</param>
+				<param name="criteria.searchOperationFlag">${criteria.searchOperationFlag}</param>
+				<param name="hasCondition">${hasCondition}</param>  
+			</result> 
+        	<!--<result name="success">/WEB-INF/plan/viewPlan.jsp</result>
+        	-->
+        	<result name="toEditPage">/WEB-INF/plan/editPlan.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+		</action>  
+		
+		<action name="viewNextRecordDetail" method="viewNeedRecordDetail" class="planAction">
+			<param name="viewType">1</param>
+        	<result name="success">/WEB-INF/plan/viewPlan.jsp</result>
+        	<result name="toEditPage">/WEB-INF/plan/editPlan.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+		</action> 
+		
+		<action name="viewPreviousRecordDetail" method="viewNeedRecordDetail" class="planAction">
+			<param name="viewType">-1</param>
+        	<result name="success">/WEB-INF/plan/viewPlan.jsp</result>
+        	<result name="toEditPage">/WEB-INF/plan/editPlan.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+		</action>
+		
+        <action name="viewPlanDetail" class="planAction" method="viewPlanDetail">
+        	<result name="success">/WEB-INF/plan/viewPlan.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+        </action>
+        
+        <action name="toEditPlan" class="planAction" method="toEditPlan">
+        	<result name="success">/WEB-INF/plan/editPlan.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+        </action>
+        
+        <action name="clearOperation" class="planAction" method="clearOperation"></action>
+        
+        <action name="deletePlan" class="planAction" method="deletePlan">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <result type="json" name="data_warning">
+                <param name="root">jsonObject</param>
+            </result>
+        </action>
+        
+        <action name="publishPlan" class="planAction" method="publishPlan">
+        	<result name="success" type="json">
+        		<param name="root">jsonObject</param>
+        	</result>
+        	<result type="json" name="data_warning">
+        		<param name="root">jsonObject</param>
+        	</result>
+        </action>
+        
+        <action name="cancelPlan" class="planAction" method="cancelPlan">
+        	<result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <result type="json" name="data_warning">
+                <param name="root">jsonObject</param>
+            </result>
+        </action>
+        
+        <action name="findActualCourseById" class="planAction" method="findActualCourseById">
+        	<result name="success">/WEB-INF/plan/viewPlanCourse.jsp</result>
+        	<result name="sessionSuccess">/WEB-INF/plan/viewPlanSession.jsp</result>
+        	<result name="error">/WEB-INF/plan/createPlan.jsp</result>
+        </action>
+        
+		<action name="getPlanAttachmentsById" class="planAction" method="getPlanAttachmentsById">
+			<result type="json" name="success">
+				<param name="root">jsonArray</param>
+			</result>
+		</action>
+		
+		<action name="getActualCourseAttachmentsById" class="planAction" method="getActualCourseAttachmentsById">
+			<result type="json" name="success">
+				<param name="root">jsonArray</param>
+			</result>
+		</action>
+		
+		<action name="getPlanInfo" class="planAction" method="getPlanInfo">
+			<result name="success">/WEB-INF/plan/planAction.jsp</result>
+		</action>
+		
+		<action name="getActualCourseInfo" class="planAction" method="getActualCourseInfo">
+			<result name="success">/WEB-INF/plan/planCourseAction.jsp</result>
+		</action>
+		
+		<action name="applyLeavePlan" class="planAction" method="applyLeavePlan">
+			<result name="success">/WEB-INF/plan/planAction.jsp</result>
+		</action>
+		
+		<action name="applyLeaveCourse" class="planAction" method="applyLeaveCourse">
+			<result name="success">/WEB-INF/plan/planCourseAction.jsp</result>
+		</action>
+		
+		<action name="applyBackCourse" class="planAction" method="applyBackCourse">
+			<result name="success">/WEB-INF/plan/planCourseAction.jsp</result>
+		</action>
+		
+		<action name="applyBackPlan" class="planAction" method="applyBackPlan">
+			<result name="success">/WEB-INF/plan/planAction.jsp</result>
+		</action>
+    </package>
+</struts>

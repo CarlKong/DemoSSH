@@ -1,0 +1,82 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/js
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-29T10:44:29.446683Z
+28835
+margaret.wang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+course
+dir
+
+assessment
+dir
+
+search
+dir
+
+dashboard
+dir
+
+common
+dir
+
+login
+dir
+
+actualCourse
+dir
+
+base
+dir
+
+plan
+dir
+
+message.js.jsp
+file
+
+
+
+
+2013-06-27T03:14:15.283352Z
+0accde5fb25986acf61b7e1066dfa758
+2013-02-25T10:56:56.937022Z
+27115
+jackson.mu
+
+roleList
+dir
+
+jquery-1.6.4.js
+file
+
+
+
+
+2013-06-27T03:14:15.283352Z
+c677462551f4cc0f2af192497b50f3f5
+2012-07-19T06:47:40.108872Z
+11597
+jude.zhu
+

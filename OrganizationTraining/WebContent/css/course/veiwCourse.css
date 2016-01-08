@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+.first_content_layout_line {
+	width: 960px;
+	margin-bottom: 10px;
+}
+
+.first_line_content {
+	height: 16px;
+	position: relative;
+	margin-left: 160px;
+	vertical-align: top;
+}
+
+.first_line {
+	border-bottom: 1px solid #DDF1F8;
+	height: 10px;
+	position: relative;
+	margin-left: 150px;
+	margin-right: 180px;
+	vertical-align: top;
+}
+
+.first_line_content_left {
+	text-align: left;
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+	height: 16px;
+	line-height: 17px;
+}
+
+.first_line_content_right {
+	text-align: right;
+	width: 460px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px;
+	line-height: 17px;
+}
+
+.first_bar {
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 17px;
+	vertical-align: top;
+}
+
+.first_a {
+	color: #418FB5;
+}
+
+.first_other_a {
+	color: #BFBFBF;
+}
+
+.viewCourseDetails {
+	padding: 20px 0;
+}
+
+.line_content_right a {
+	color: #418FB5;
+}
+
+.view_course_btn {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#course_edit_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+}
+
+#course_delete_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	margin-left: 20px;
+}
+
+/*attachment*/
+#upload_r_attachment_detail {
+	
+}
+
+#upload_attachment_list {
+	margin-left: 160px;
+}
+
+.message_span {
+	display: none;
+}
+
+#brief {
+	display: block;
+	overflow: auto;
+}

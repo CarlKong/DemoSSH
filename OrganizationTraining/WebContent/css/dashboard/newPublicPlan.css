@@ -1,0 +1,357 @@
+.new_public_plan{
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	width: 400px;
+}
+.new_publish_table_header{
+	width: 390px;
+	margin-left: 5px;
+	position:relative;
+	color: #FFF;
+	font:bold 14px arial;
+	overflow: hidden;
+	line-height: 30px;
+	height: 30px;
+	background-image: url(../../image/dashboardIMG/IMG_ListTitle_Middle_1x30.png);
+}
+
+.table_header_theme{
+	float: left;
+}
+.table_header_record_total_num{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	padding-top:2px;
+	width: 20px;
+	height: 20px;
+	line-height:20px;
+	vertical-align:middle;
+	text-align: center;
+	font:12px arial regular;
+	background: url("../../image/dashboardIMG/IMG_Message_1_20x20.png") transparent no-repeat;
+}
+.table_header_record_total_num_for_long{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 20px;
+	text-align: left;
+}
+.record_total_num_for_long_middle{
+	float: left;
+	height: 20px;
+	line-height:18px;
+	vertical-align:middle;
+	text-align: center;
+	background: url("../../image/dashboardIMG/IMG_Message_Middle_1x20.png");
+}
+.record_total_num_for_long_left{
+	float: left;
+	padding-top:1px;
+	width: 10px;
+	height: 20px;
+	background: url("../../image/dashboardIMG/IMG_Message_Left_10x20.png") transparent no-repeat;
+}
+.record_total_num_for_long_right{
+	float: left;
+	padding-top:1px;
+	width: 10px;
+	height: 20px;
+	background: url("../../image/dashboardIMG/IMG_Message_Right_10x20.png") transparent no-repeat;
+}
+.refresh{
+	background: url("../../image/dashboardIMG/ICN_Refresh_24x24.png") transparent no-repeat;
+}
+a.refresh:hover{
+	background: url("../../image/dashboardIMG/ICN_Refresh_Hover_24x24.png") transparent no-repeat;
+}
+.next{
+	background: url("../../image/dashboardIMG/ICN_Next_1_24x24.png") transparent no-repeat;
+}
+a.next:hover{
+	background: url("../../image/dashboardIMG/ICN_Next_1_Hover_24x24.png") transparent no-repeat;
+}
+.previous{
+	background: url("../../image/dashboardIMG/ICN_Previous_1_24x24.png") transparent no-repeat;
+}
+a.previous:hover{
+	background: url("../../image/dashboardIMG/ICN_Previous_1_Hover_24x24.png") transparent no-repeat;
+}
+.next_disable{
+	background: url("../../image/dashboardIMG/ICN_Next_Disable_24x24.png") transparent no-repeat;
+}
+.previous_disable{
+	background: url("../../image/dashboardIMG/ICN_Previous_Disable_24x24.png") transparent no-repeat;
+}
+.refresh,.previous,.previous_disable{
+	margin-right: 2px;
+}
+.table_header_button{
+	float: left;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	margin-top: 3px;
+}
+.table_header_button_disable{
+	float: left;
+	width: 24px;
+	height: 24px;
+}
+.new_publish_table_header .new_publish_table_header_left{
+	width:300px;
+}
+.new_publish_table_header_left_corner{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 5px;
+	height: 30px;
+	background: url(../../image/dashboardIMG/IMG_ListTitle_Left_5x30.png) no-repeat 50% 50%;
+}
+.new_publish_table_header_right_corner{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 5px;
+	height: 30px;
+	background: url(../../image/dashboardIMG/IMG_ListTitle_Right_5x30.png) no-repeat 50% 50%;	
+}
+.table_body{
+	width: 400px;
+	position:relative;
+	color: #555555;
+	font-size:12px;
+	overflow: hidden;
+}
+.table_record{
+	overflow: hidden;
+}
+.table_record_detail{
+	height: 40px;
+	background-image: url(../../image/dashboardIMG/IMG_List_2_1x40.png);
+}
+.table_record_detail_left{
+	float: left;
+	width: 360px;
+	height: 28px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 10px;
+}
+.table_record_detail_left_one_layer{
+	padding-right: 20px;
+	height: 14px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.table_record_detail_left_one_layer_blue{
+	color: #418FB5;
+	cursor: pointer;
+}
+.table_record_detail_left_two_layer{
+	padding-right: 20px;
+	padding-left: 10px;
+	height: 14px;
+	text-align: left;
+	color: #D4A639;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.table_record_detail_right{
+	float: left;
+	width: 20px;
+	height: 31px;
+	margin-top: 9px;
+	margin-right: 10px;
+}
+.table_record_additional{
+	float: left;
+	overflow: hidden;
+}
+.table_record_course{
+	text-align: left;
+}
+
+.table_record_course_left{
+	float:left;
+	width: 150px;
+	margin-right: 10px;
+	text-align: left;
+	line-height: 30px;
+	vertical-align: middle;
+	color: #418FB5;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.table_record_course_middle{
+	float:left;
+	width: 140px;
+	margin-right: 20px;
+	text-align: left;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.table_record_course_right{
+	float: left;
+	margin-top: 5px;
+	width: 40px;
+	height: 25px;
+}
+.table_record_course_last{
+	text-align: right;
+}
+.table_record_course,.table_record_course_last{
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #CCCCCC;
+	width: 360px;
+	height: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.expand{
+	background: url("../../image/dashboardIMG/ICN_Fold_20x21.png") transparent no-repeat;
+}
+.packUp{
+	background: url("../../image/dashboardIMG/ICN_Expand_20x21.png") transparent no-repeat;
+}
+.expand,.packUp{
+	float:left;
+	padding-top: 2px;
+	width: 20px;
+	height: 21px;
+	cursor: pointer;
+}
+.join{
+	background: url("../../image/dashboardIMG/BTN_Join_40x21.png") transparent no-repeat;
+}
+a.join:hover{
+	background: url("../../image/dashboardIMG/BTN_Join_Hover_40x21.png") transparent no-repeat;
+}
+.quit{
+	background: url("../../image/dashboardIMG/BTN_Quit_40x21.png") transparent no-repeat;
+}
+a.quit:hover{
+	background: url("../../image/dashboardIMG/BTN_Quit_Hover_40x21.png") transparent no-repeat;
+}
+.join_all{
+	background: url("../../image/dashboardIMG/BTN_JoinAll_40x21.png") transparent no-repeat;
+}
+a.join_all:hover{
+	background: url("../../image/dashboardIMG/BTN_JoinAll_Hover_40x21.png") transparent no-repeat;
+}
+.quit_all{
+	background: url("../../image/dashboardIMG/BTN_QuitAll_40x21.png") transparent no-repeat;
+}
+a.quit_all:hover{
+	background: url("../../image/dashboardIMG/BTN_QuitAll_Hover_60x21.png") transparent no-repeat;
+}
+.join,.quit{
+	padding-top:2px;
+	float: left;
+	width: 40px;
+	height: 21px;
+	line-height: 21px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	font:bold 12px arial;
+}
+.join_all,.quit_all{
+	margin-top:5px;
+	padding-top:2px;
+	float: left;
+	width: 60px;
+	height: 21px;
+	line-height: 21px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	font:bold 12px arial;
+}
+.join_all{
+	margin-left: 230px;
+	margin-right: 10px;
+}
+.join,.join_all{
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(65,144,37,0.75);
+}
+.quit,.quit_all{
+	color: #999999;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+.dataList-div-loader{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.6;
+	background: #DDD url(../../image/dashboardIMG/loading.gif) no-repeat 50% 50%;
+	z-index: 9999999;
+}
+.vertical_slide{
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	display: block;
+	width: 10px;
+}
+.vertical_slide_top {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: url("../../image/dashboardIMG/BG_Scrollbar_Top_10x5.png") transparent no-repeat;
+}
+.vertical_slide_bottom {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: url("../../image/dashboardIMG/BG_Scrollbar_Bottom_10x5.png") transparent no-repeat;
+}
+.vertical_slide_middle {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 83px;
+	background: url("../../image/dashboardIMG/BG_Scrollbar_Middle_10x1.png");
+}
+.vertical_slideDiv{
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	display: block;
+	width: 10px;
+}
+.vertical_slideDiv_top{
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: url("../../image/dashboardIMG/IMG_Scrollbar_Top_10x5.png") transparent no-repeat;
+}
+.vertical_slideDiv_bottom{
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: url("../../image/dashboardIMG/IMG_Scrollbar_Bottom_10x5.png") transparent no-repeat;
+}
+.vertical_slideDiv_middle {
+	position: relative;
+	display: block;
+	width: 10px;
+	height:50px;
+	background: url("../../image/dashboardIMG/IMG_Scrollbar_Middle_10x1.png");
+}

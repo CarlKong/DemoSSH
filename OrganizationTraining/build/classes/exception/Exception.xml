@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exception>
+	<!-- Server internal error -->
+	<errorCode id="E0001">
+		<errorMessageKey></errorMessageKey>
+		<logMessage>Exception error.</logMessage>
+		<flag>1</flag>
+	</errorCode>
+	<errorCode id="E0002">
+        <errorMessageKey></errorMessageKey>
+        <logMessage>Validation failure.</logMessage>
+        <flag>1</flag>
+    </errorCode>
+	
+	<!-- Common message -->
+	<errorCode id="W0001">
+		<logMessage>There is no data</logMessage>
+		<errorMessageKey>no_data</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	
+	<!-- Course part exception -->
+	<errorCode  id="W1001">
+		<logMessage>Failed to view detail course [#_course_id] that it is already deleted.</logMessage>
+		<errorMessageKey>course_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	<errorCode  id="W1002">
+		<logMessage>Failed to edit course [#_course_id] that it is already deleted.</logMessage>
+		<errorMessageKey>course_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	<errorCode  id="W1003">
+		<logMessage>Failed to delete course [#_course_id] that it is already deleted.</logMessage>
+		<errorMessageKey>course_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	<errorCode  id="W1004">
+		<logMessage>Failed to create course that its author [_author_name] is not exist.</logMessage>
+		<errorMessageKey>author_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	<errorCode  id="W1005">
+		<logMessage>Failed to view detail course [#_course_id] that its attachment is not exist.</logMessage>
+		<errorMessageKey>attachment_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	<errorCode  id="W1006">
+		<logMessage>Failed to edit course [#_course_id] that course type input is not exist.</logMessage>
+		<errorMessageKey>courseType_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+
+	
+	<errorCode  id="W5001">
+		<logMessage>Failed to search role list when search condtion is not complete.</logMessage>
+		<errorMessageKey>search_condtion_not_exist_error</errorMessageKey>
+		<flag>0</flag>
+	</errorCode>
+	
+	<!-- Plan part exception -->
+	<errorCode id = "W2001" >
+       <logMessage>Failed cancel plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>cancel_not_publish_plan_error</errorMessageKey>
+       <flag>1</flag>
+    </errorCode>
+    
+    <errorCode id = "W2002" >
+       <logMessage>Failed apply leave to invited plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>apply_leave_to_invited_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2003" >
+       <logMessage>Failed join plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>join_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2004" >
+       <logMessage>Failed quit plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>quit_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2005" >
+       <logMessage>Failed assess plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>assess_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2006" >
+       <logMessage>Failed assess trainers of plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>assess_trainers_of_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2007" >
+       <logMessage>Failed assess trainees of plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>assess_trainees_of_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+       
+    </errorCode>
+    
+    <errorCode id = "W2008" >
+       <logMessage>Failed assess a course of plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>assess_a_course_of_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2009" >
+       <logMessage>Failed view all assessments of plan [#_plan_id] that is not published.</logMessage>
+       <errorMessageKey>view_all_assessments_of_not_publish_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2030" >
+       <logMessage>Failed publish plan [#_plan_id] that is on-going.</logMessage>
+       <errorMessageKey>publish_on_going_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2031" >
+       <logMessage>Failed delete plan [#_plan_id] that is on-going.</logMessage>
+       <errorMessageKey>delete_on_going_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2032" >
+       <logMessage>Failed assess plan [#_plan_id] that is on-going.</logMessage>
+       <errorMessageKey>assess_on_going_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2033" >
+       <logMessage>Failed assess trainers of plan [#_plan_id] that is on-going.</logMessage>
+       <errorMessageKey>assess_trainers_of_on_going_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2034" >
+       <logMessage>Failed view all assessments of plan [#_plan_id] that is on-going.</logMessage>
+       <errorMessageKey>view_all_assessments_of_on_going_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2050" >
+       <logMessage>Failed view detail of plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>view_detail_of_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2051" >
+       <logMessage>Failed edit plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>edit_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2052" >
+       <logMessage>Failed publish plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>publish_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2053" >
+       <logMessage>Failed cancel plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>cancel_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2054" >
+       <logMessage>Failed delete plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>delete_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2055" >
+       <logMessage>Failed apply leave to invited plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>apply_leave_to_invited_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2056" >
+       <logMessage>Failed join public plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>join_public_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2057" >
+       <logMessage>Failed quit public plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>quit_public_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2058" >
+       <logMessage>Failed assess plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>assess_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2059" >
+       <logMessage>Failed assess trainers of plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>assess_trainers_of_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2060" >
+       <logMessage>Failed assess trainees of plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>assess_trainees_of_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    
+    <errorCode id = "W2061" >
+       <logMessage>Failed assess a course of plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>assess_a_course_of_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2062" >
+       <logMessage>Failed view all assessments of plan [#_plan_id] that is already canceled.</logMessage>
+       <errorMessageKey>view_all_assessments_of_canceled_plan</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2080" >
+       <logMessage>Failed edit plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>edit_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2081" >
+       <logMessage>Failed publish plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>publish_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2082" >
+       <logMessage>Failed cancel plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>cancel_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2083" >
+       <logMessage>Failed apply leave to invited plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>apply_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2084" >
+       <logMessage>Failed  join public plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>join_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2085" >
+       <logMessage>Failed quit public plan [#_plan_id] that is already completed.</logMessage>
+       <errorMessageKey>quit_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    
+    <errorCode id = "W2100" >
+       <logMessage>Failed view detail of plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>veiw_detail_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2101" >
+       <logMessage>Failed edit plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>edit_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2102" >
+       <logMessage>Failed publish plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>publish_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2103" >
+       <logMessage>Failed cancel plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>cancel_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2104" >
+       <logMessage>Failed delete plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>delete_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2105" >
+      <logMessage>Failed  apply leave to invited  plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey> apply_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2106" >
+       <logMessage>Failed  join public  plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey> join_detail_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2107" >
+       <logMessage>Failed quit public plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>quit_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2108" >
+       <logMessage>Failed assess plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>assess_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2109" >
+       <logMessage>Failed assess trainers of plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>assess_trainers_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2110" >
+       <logMessage>Failed assess trainees of plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>assess_trainees_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2111" >
+       <logMessage>Failed assess a course of plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>assess_course_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2112" >
+       <logMessage>Failed view all assessments of plan [#_plan_id] that is already deleted.</logMessage>
+       <errorMessageKey>view_all_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2130" >
+       <logMessage>Failed publish plan [#_plan_id]  that has no course added.</logMessage>
+       <errorMessageKey>publish_no_course_added_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+   <errorCode id = "W2131" >
+       <logMessage>Failed publish plan [#_plan_id]  that has no invited trainees added.</logMessage>
+       <errorMessageKey>publish_plan_without_invited_trainees</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2132" >
+       <logMessage>Failed publish plan [#_plan_id]  that has no specific trainees added.</logMessage>
+       <errorMessageKey>publish_plan_without_specific_trainees</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2140" >
+       <logMessage>Failed publish invited plan [#_plan_id] that has no trainee added.</logMessage>
+       <errorMessageKey>publish_invited_added_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2150" >
+       <logMessage>Failed publish public plan [#_plan_id] (set for specific employees) that has no trainees added.</logMessage>
+       <errorMessageKey>publish_public_added_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2160" >
+       <logMessage>Failed publish plan [#_plan_id] that is already published.</logMessage>
+       <errorMessageKey>publish_published_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2170" >
+       <logMessage>Failed publish plan [#_plan_id] if there is a course in the plan already started.</logMessage>
+       <errorMessageKey>publish_one_course_started_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2180" >
+       <logMessage>Failed edit or delete plan course [#_plan_course_id]  that is already completed.</logMessage>
+       <errorMessageKey>edit_or_delete_completed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2190" >
+       <logMessage>Failed create a plan [#_plan_id] with one or more courses already started.</logMessage>
+       <errorMessageKey>create_started_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2191" >
+       <logMessage>Failed edit plan [#_plan_id] with one or more courses already started.</logMessage>
+       <errorMessageKey>edit_started_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2200" >
+       <logMessage>Failed select courses for plan [#_plan_id] as some of courses selected are deleted.</logMessage>
+       <errorMessageKey>select_courses_deleted_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2210" >
+       <logMessage>Failed create a plan [#_plan_id]  as some of trainees or trainers are not existed.</logMessage>
+       <errorMessageKey>create_with_user_not_existed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <errorCode id = "W2211" >
+       <logMessage>Failed edit plan [#_plan_id]  as some of trainees or trainers are not existed.</logMessage>
+       <errorMessageKey>edit_with_user_not_existed_plan_error</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    <errorCode id = "W2212" >
+       <logMessage>Failed  join all the public  plan [#_plan_id] because some planCourses were started.</logMessage>
+       <errorMessageKey> join_all_plan_some_course_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    <errorCode id = "W2213" >
+       <logMessage>Failed  quit all the public  plan [#_plan_id] because some planCourses were started.</logMessage>
+       <errorMessageKey> quit_all_plan_some_course_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    <errorCode id = "W2214" >
+       <logMessage>Failed  delete the public  plan [#_plan_id] because some planCourses fields is null.</logMessage>
+       <errorMessageKey>delete_public_plan_failure_exist_null_fields_planCourse</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+	<!-- Assessment -->
+    <errorCode id = "W3001" >
+       <logMessage>Failed assess plan [#_plan_id] that exceeds its due time for assessment.</logMessage>
+       <errorMessageKey>you_must_assess_a_plan_within_7_days_after_the_plan_is_completed</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3010" >
+       <logMessage>Failed assess trainers of plan [#_plan_id] that exceeds its due time for assessment.</logMessage>
+       <errorMessageKey>you_must_assess_trainers_of_a_plan_within_7_days_after_the_plan_is_completed</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3020" >
+       <logMessage>Failed assess trainees of plan course [#_plan_course_id] that exceeds its due time for assessment.</logMessage>
+       <errorMessageKey>you_must_assess_trainees_of_a_plan_course_within_7_days_after_the_course_is_completed</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3030" >
+       <logMessage>Failed assess plan course [#_plan_course_id] that exceeds its due time for assessment.</logMessage>
+       <errorMessageKey>you_must_assess_a_plan_course_within_7_days_after_the_course_is_completed</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3040" >
+       <logMessage>Failed assess trainees of [#_plan_course_id] that is on-going or not started.</logMessage>
+       <errorMessageKey>you_cannot_assess_trainees_of_a_plan_course_that_is_ongoing_or_not_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3041" >
+       <logMessage>Failed assess trainees of [#_plan_course_id] that is on-going or not started.</logMessage>
+       <errorMessageKey>you_cannot_assess_a_plan_course_that_is_ongoing_or_not_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3050" >
+       <logMessage>Failed assess trainees of a plan course [#_plan_course_id] that is deleted.</logMessage>
+       <errorMessageKey>you_cannot_assess_trainees_of_a_plan_course_that_is_deleted</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+	
+	<errorCode id = "W3051" >
+       <logMessage>Failed assess trainees of a plan course [#_plan_course_id] that is deleted.</logMessage>
+       <errorMessageKey>you_cannot_assess_a_plan_course_that_is_deleted</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    
+    <!-- Plan Course -->
+    <errorCode id = "W4001" >
+       <logMessage>Join the PlanCourse[#_plan_course_id] that is started.</logMessage>
+       <errorMessageKey>join_plan_course_that_is_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    <errorCode id = "W4002" >
+       <logMessage>Quit the PlanCourse[#_plan_course_id] that is started.</logMessage>
+       <errorMessageKey>quit_plan_course_that_is_started</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+    <errorCode id = "W4003" >
+       <logMessage>Get the ActualCourse[#_actual_course_id] that is deleted.</logMessage>
+       <errorMessageKey>quit_actual_course_that_is_deleted</errorMessageKey>
+       <flag>0</flag>
+    </errorCode>
+</exception>

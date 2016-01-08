@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+.line_content {
+	height: 30px;
+}
+
+.line_content_span {
+	width: 29px;
+	line-height: 30px;
+}
+
+.create_course_btn {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#course_create_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+}
+
+#course_cancel_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	margin-left: 20px;
+}
+
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 20px;
+}
+
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #FFF url(../../image/commonIMG/IMG_Background_4x4.png);
+	color: #555;
+}

@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+
+.view_planCourse_details {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

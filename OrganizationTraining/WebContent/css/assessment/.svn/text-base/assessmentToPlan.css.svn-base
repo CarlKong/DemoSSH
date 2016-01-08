@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+#from_trainee_menu, #from_trainer_menu {
+	width: 130px;
+	padding-left: 10px;
+}
+
+#assessed_plan {
+	margin-top: 0px;
+}

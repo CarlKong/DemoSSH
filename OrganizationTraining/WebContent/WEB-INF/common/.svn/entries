@@ -1,0 +1,52 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/common
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+header.jsp
+file
+
+
+
+
+2013-06-27T03:14:12.882153Z
+8b2b32a4da891fd55a5c4161cf7920d8
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+footer.jsp
+file
+
+
+
+
+2013-06-27T03:14:12.882153Z
+82defd597c176e02738cae5f902b8510
+2012-12-17T06:42:04.779557Z
+23739
+marco.qiu
+

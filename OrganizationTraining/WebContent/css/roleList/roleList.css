@@ -1,0 +1,79 @@
+.dataList-div-button{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.a_adjust_right{
+    margin-right: 5px;
+}
+.a_adjust_left{
+    margin-left: 5px;
+}
+.checked,.unchecked,.trychecked,.untrychecked{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-top: 7px;
+}
+.checked {
+    background: url(../../image/roleListIMG/ICN_Checkbox_Active_14x15.png) no-repeat;
+}
+.operated{
+	border: 3px solid #66A9CE;
+	border-top:none;
+	border-left: none;
+	border-right: none; 
+	height:16px;
+}
+
+.unchecked {
+    background: url(../../image/roleListIMG/ICN_Checkbox_14x15.png) no-repeat;
+}
+.dataList-div-pageSize{
+	display: block;
+	top: -74px;
+}
+.dataList-div-head{
+	width: 930px;
+	margin-left: 5px; 
+}
+.w-30{
+	width: 23px;
+}
+.w-58{
+	width: 150px;
+	cursor:pointer;
+}
+.w-118{
+	width: 200px;
+	cursor:pointer;
+}
+.w-300{
+	width: 300px;
+	cursor:pointer;
+}
+.w-108{
+	width: 108px;
+	cursor:pointer;
+}
+.w-158{
+	width: 158px;
+	cursor:pointer;
+}
+.w-128{
+	width: 128px;
+	cursor:pointer;
+}
+.w-68{
+	width: 68px;
+	cursor:default;
+}
+.w-70{
+	width: 65px;
+	cursor:default;
+}
+.dataList-div-body{
+	min-height: 300px; 
+	margin-left: 0px; 
+	margin-top: 0px;
+}

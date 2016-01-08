@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+#trainer_assess_planCourse_value {
+	padding: 5px 10px 5px 10px;
+	width: 760px;
+	margin-left: 6px;
+}
+
+#planCourse_average_part {
+	margin-top: 0px;
+	padding-top: 25px;
+	display: inline-block;
+	padding-bottom: 5px;
+}

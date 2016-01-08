@@ -1,0 +1,159 @@
+@CHARSET "UTF-8";
+
+#master2trainer_popup .assessment_popup_div {
+	width: 560px !important;
+}
+
+#master2trainer_popup .assessment_popup_titile {
+	width: 560px;
+}
+
+#master2trainer_popup .assessment_item {
+	width: 520px;
+}
+
+#master2trainer_popup .item_default_30 {
+	height: 120px;
+}
+
+#master2trainer_popup .star_div {
+	margin-top: 5px;
+}
+
+#master2trainer_popup .assess_comment {
+	width: 508px;
+	height: 88px;
+}
+
+#master2trainer_popup .item_description_up_2 {
+	font: 13px Regular "Arial";
+	color: #BFBFBF;
+	overflow: hidden;
+	word-break: keep-all;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+#master2trainer_popup .item_description_up {
+	display: inline-block;
+}
+
+#master2trainer_popup .star_div img {
+	margin-right: 4px;
+	margin-left: 1px;
+}
+
+#master2trainer_popup .assessment_textarea .tipDiv{
+	margin-left:6px;
+	margin-top:-96px;
+}
+
+.trainers_div {
+	margin: 0 20px 10px 20px;
+}
+
+#trainers_span {
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	display: inline-block;
+}
+
+#trainers_dropDown {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 180px;
+	height: 30px;
+	background-color: #DDF1F8;
+	border: 1px solid;
+	border-color: #B8D9EA;
+	border-radius: 2px;
+	float: left;
+	display: inline-block;
+}
+
+#assessed_icon {
+	background-image: url("../../image/assessment/IMG_Assessed_12x9.png");
+	width: 12px;
+	height: 9px;
+	margin: 10px 9px 0 9px;
+	display: inline-block;
+	z-index: 1;
+}
+
+#trainer_name {
+	font-weight: bold;
+	display: inline-block;
+}
+
+#dropDown_button {
+	background-image: url("../../image/assessment/BTN_Dropdown_12x18.png");
+	width: 12px;
+	height: 18px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 6px;
+	display: inline-block;
+	cursor: pointer;
+	z-index: 1;
+}
+
+#trainer_options {
+	width: 180px;
+	border: 1px solid;
+	border-color: #BFBFBF;
+	border-radius: 2px;
+	position: relative;
+	top: 5px;
+	right: 1px;
+	z-index: 10;
+	background-color: #FFFFFF;
+	visibility: hidden;
+	cursor: default;
+}
+
+.trainer_option {
+	width: 180px;
+	height: 20px;
+	color: #808080;
+}
+
+.trainer_option:hover {
+	width: 180px;
+	height: 20px;
+	background-color: #DDF1F8;
+	color: #418FB5;
+}
+
+.option_checked {
+	background-image: url("../../image/assessment/IMG_Assessed_12x9.png");
+	width: 12px;
+	height: 9px;
+	margin-left: 9px;
+	margin-right: 9px;
+	display: none;
+}
+
+.option_name {
+	margin-left: 30px;
+}
+
+#trainers_tooTip {
+	background-image: url("../../image/assessment/ICN_Course_30x30.png");
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	z-index: 1;
+}
+
+#trainers_rate {
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	display: inline-block;
+}
+
+.master2trainer_assess {
+	display: none;
+}

@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+.common_menu_bg, .common_tab {
+	float:left;
+	height: 40px;
+	display: inline-block;
+}
+
+.common_menu_bg {
+	width: 260px;
+	height: 40px;
+	display: inline-block;
+	background: url("../../image/plan/selectCourse/IMG_Tab_BKG_1x40.png") repeat-x;
+	float: left;
+}
+
+.common_tab {
+	cursor: pointer;
+	width: 110px;
+}
+
+.unselectedTabBkg {
+	background: url("../../image/plan/selectCourse/IMG_Tab_BKG_1x40.png") repeat-x;
+}
+
+.unselectedBkg {
+	width: 4px;
+	height: 40px;
+	float: left;
+	display: inline-block;
+}
+
+.unselected_tab_left, .unselected_tab_right {
+	width: 3px;
+	margin-top: 9px;
+	height: 31px;
+}
+
+.unselected_tab_left {
+	background: url("../../image/plan/selectCourse/IMG_Tab_Left_3x31.png") no-repeat;
+}
+
+.unselected_tab_right {
+	background: url("../../image/plan/selectCourse/IMG_Tab_Right_3x31.png") no-repeat;
+}
+
+.selected_tab_left, .selected_tab_right {
+	width: 10px;
+	height: 40px;
+}
+
+.selected_tab_left {
+	background: url("../../image/plan/selectCourse/IMG_Tab_Left_Active_10x40.png") no-repeat;
+}
+
+.selected_tab_right {
+	background: url("../../image/plan/selectCourse/IMG_Tab_Right_Active_10x40.png") no-repeat;
+}
+
+.unselected_mid_tab {
+	color: #71B3D6;
+	margin-top: 9px;
+	height: 31px;
+	line-height: 32px;
+	width: 96px;
+	background: url("../../image/plan/selectCourse/IMG_Tab_Middle_1x31.png") repeat-x;
+	
+}
+
+.selected_mid_tab {
+	width: 90px;
+	color: #71B3D6;
+	background: url("../../image/plan/selectCourse/IMG_Tab_Middle_Active_10x40.png") repeat-x;
+	height: 40px;
+	line-height: 50px;
+}
+
+.mid_part {
+	text-align: center;
+	font-weight: bold;
+}
+
+.unselectedBkg, .left_border, .mid_part, .right_border {
+	float: left;
+	display: inline-block;
+}
+
+.tab_hover_left {
+	margin-top: 9px;
+	height: 31px;
+	width: 3px;
+	background: url("../../image/plan/selectCourse/IMG_Tab_Left_Hover_3x31.png") no-repeat;
+}
+
+.tab_hover_mid {
+	width: 96px;
+	height: 31px;
+	line-height: 32px;
+	margin-top: 9px;
+	color: #FFFFFF;
+	background: url("../../image/plan/selectCourse/IMG_Tab_Middle_Hover_3x31.png") repeat-x;
+}
+
+.tab_hover_right {
+	margin-top: 9px;
+	width: 3px;
+	height: 31px;
+	background: url("../../image/plan/selectCourse/IMG_Tab_Right_Hover_3x31.png") no-repeat;
+}

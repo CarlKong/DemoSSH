@@ -1,0 +1,295 @@
+@CHARSET "UTF-8";
+
+.trainer2trainee_content_div {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	z-index: 101;
+	display: none;
+	top: 0px;
+	
+}
+
+.trainer_assess_trainee_content {
+	background: url("../../image/commonIMG/IMG_Background_4x4.png");
+	width: 960px;
+	position: relative;
+	background-color: #fff;
+}
+
+.init_trainee_list_body {
+	width: 940px;
+	overflow: hidden;
+	height: 300px;
+	position: relative;
+}
+
+.real_trainees_div {
+	width: 940px;
+	position: absolute;
+}
+
+.vertical_scroll {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 300px;
+	display: block;
+	opacity: 0.5;
+	width: 14px;
+	border-radius: 10px;
+	background-color: #BBB;
+}
+
+.vertical_slide_block {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: default;
+	width: 14px;
+	opacity: 0.9;
+	border-radius: 10px;
+	background-color: #888;
+}
+
+.trainer_to_trainee_head {
+	height: 30px;
+	line-height: 30px;
+	background: url(../../image/assessment/IMG_Tab_Middle_1x30.png);
+	width: 100%;
+}
+
+.trainer_assess_trainee_body {
+	height: 550px;
+	width: 940px;
+	display: inline-block;
+	padding-left:10px; 
+}
+
+.feedback {
+	margin-left: 20px;
+	color: white;
+	font-weight: bold;
+	width: 120px;
+	float: left;
+}
+
+.closeIcon {
+	width: 11px;
+	height: 11px;
+	background: url(../../image/buttonIMG/ICN_Close_11x11.png) no-repeat;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-top: 9.5px;
+	float: right;
+}
+
+#a_course_name {
+	font-weight: bold;
+}
+
+#a_course_prefixid {
+	font-size: 12px;
+}
+
+.assess_title_middle {
+	width: 930px;
+	color: #61BBDD;
+	font-weight: bold;
+}
+
+.id_title, .name_title, .attendance_title, .score_item, .comments_title {
+	height: 30px;
+	line-height: 32px;
+	float: left;
+}
+
+.id_title {
+	width: 60px;
+	margin-left: 25px;
+}
+
+.name_title {
+	width: 110px;
+}
+
+.attendance_title {
+	width: 110px;
+}
+
+.optional_item {
+	width: 110px;
+	float: left;
+}
+
+.trainee_item {
+	width: 940px;
+	height: 30px;
+	font-size: 12px;
+	background: url("../../image/assessment/IMG_List_1x30.png");
+	line-height: 30px;
+}
+
+.trainee_num {
+	width: 30px;
+	float: left;
+	text-align: center;
+}
+
+.trainee_preId {
+	width: 60px;
+	float: left;
+}
+
+.trainee_name, .attend_field {
+	width: 110px;
+	float: left;
+}
+
+.score_item_field {
+	width: 110px;
+	float: left;
+	height: 16px;
+	margin-top: 7px;
+}
+
+.attendType {
+	width: 20px;
+	height: 19px;
+	margin-top: 5.5px;
+	margin-right: 5px;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+}
+.attended_disable {
+	background: url("../../image/assessment/ICN_Attended_20x19.png") no-repeat;
+}
+
+.attended_active {
+	background: url("../../image/assessment/ICN_Attended_Active_20x19.png") no-repeat;
+}
+
+.late_disable {
+	background: url("../../image/assessment/ICN_Late_20x19.png") no-repeat;
+}
+
+.late_active {
+	background: url("../../image/assessment/ICN_Late_Active_20x19.png") no-repeat;
+}
+.leave_disable {
+	background: url("../../image/assessment/ICN_ApplyLeave_20x19.png") no-repeat;
+}
+	
+.leave_active {
+	background: url("../../image/assessment/ICN_ApplyLeave_Active_20x19.png") no-repeat;
+}
+
+.absent_disable {
+	background: url("../../image/assessment/ICN_Absent_20x19.png") no-repeat;
+}
+
+.absent_active {
+	background: url("../../image/assessment/ICN_Absent_Active_20x19.png") no-repeat;
+}
+
+.a_commonts_div {
+	width: 390px;
+	height: 30px;
+	float: left;
+}
+
+.a_commonts_input {
+	width: 383px;
+	height: 20px;
+	margin-top: 3px;
+	padding-top: 1px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 20px;
+	padding-bottom: 1px;
+	position: absolute;
+	z-index: 101;
+	background-color: #fff;	
+}
+
+.disable_star_div, .validate_star_div {
+	width: 110px;
+	height: 30px;
+	float: left;
+}
+
+.disable_star {
+	width: 16px;
+	height: 16px;
+	margin-right: 1px;
+	background: url("../../image/assessment/IMG_Star_Disable_16x16.png") no-repeat;
+	float: left;
+	margin-top: 7px;
+}
+
+.validate_star {
+	width:18px;
+	height: 18px;
+	background:url("../../image/assessment/IMG_Star_Unrated_18x18.png") center center no-repeat;
+	cursor:pointer;
+	float:left;
+	margin-top: 6px;
+}
+
+.score_item_field img {
+	margin-left: 1px;
+}
+
+.course_comments_label {
+	float: left;
+	height: 40px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.attend_decoration {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+.attend_discrib {
+	float: left;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.attend_icon {
+	float: left;
+	width: 20px;
+	height: 19px;
+	display: inline-block;
+	margin-top: 5.5px;
+}
+
+.tr2c_comments {
+	width: 928px;
+	height: 60px;
+	color: #555;
+	padding-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+.commentInputTips {
+	margin-top: -65px;
+	margin-left: 6px;
+	color: #BFBFBF;
+	font-size: 14px;
+	position: absolute;
+}
+
+.button_area {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#cancel_trainer2Trainee {
+	margin-left: 20px;
+}

@@ -1,0 +1,461 @@
+@CHARSET "UTF-8";
+
+.first_content_layout_line {
+	width: 960px;
+	margin-bottom: 10px;
+}
+
+.first_line_content {
+	height: 16px;
+	position: relative;
+	margin-left: 160px;
+	vertical-align: top;
+}
+
+.first_line {
+	border-bottom: 1px solid #DDF1F8;
+	height: 10px;
+	position: relative;
+	margin-left: 150px;
+	margin-right: 180px;
+	vertical-align: top;
+}
+
+.first_line_content_left {
+	text-align: left;
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+	height: 16px;
+	line-height: 17px;
+}
+
+.first_line_content_right {
+	text-align: right;
+	width: 460px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px;
+	line-height: 17px;
+}
+
+.first_bar {
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 17px;
+	vertical-align: top;
+}
+
+.first_a {
+	color: #418FB5;
+}
+
+.first_other_a {
+	color: #BFBFBF;
+}
+
+.a_type {
+	cursor: pointer;
+	color: #418FB5;
+}
+
+.message_span {
+	display: none;
+}
+
+.id_span {
+	font-weight: bold;
+}
+
+.view_plan_details {
+	padding-top: 20px;
+}
+
+#view_plan_id {
+	padding-bottom: 20px;
+	position: relative;
+	margin-left: 160px;
+	margin-right: 130px;
+	vertical-align: top;
+}
+
+#view_plan_id_left {
+	display: inline-block;
+}
+
+#view_plan_id_left_value {
+	width: 330px;
+}
+
+#view_plan_id_right {
+	display: inline-block;
+	float: right;
+	height: 30px;
+	position:absolute;
+}
+
+#action {
+	position: relative;
+	height: 30px;
+	width: 95px;
+	background-image: url("../../image/plan/viewPlan/IMG_Action_95x30.png");
+}
+
+#action_active_launch {
+	visibility: visible;
+	z-index: 100;
+	top: 0px;
+	position: absolute;
+	width: 19px;
+	height: 30px;
+	background-image: url("../../image/plan/viewPlan/IMG_Launch_19x27.png");
+	margin-left: 74px;
+}
+
+#action_active_shrink {
+	visibility: hidden;
+	z-index: 100;
+	top: 0px;
+	position: absolute;
+	width: 19px;
+	height: 30px;
+	background-image:
+		url("../../image/plan/viewPlan/IMG_Shrink_19x27_03.png");
+	margin-left: 74px;
+}
+
+#action_span {
+	height: 30px;
+	line-height: 30px;
+	color: #808080;
+	text-shadow: 1px -1px 28px #FFF;
+	margin-right: 19px;
+}
+
+#action_part {
+	visibility: hidden;
+	position: relative;
+	z-index: 100;
+}
+
+.action_part_button {
+	font-size: 12px;
+	color: #808080;
+	border-radius:2px;
+	margin-top:-1px;
+	border:1px solid #BEBEBE;
+	min-width:93px;
+	height: 20px;
+	background: #FCFCFC;
+	text-align: left !important;
+}
+
+.action_part_button span {
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+}
+
+.action_part_button:hover {
+	font-size: 12px;
+	color: #555555;
+	border-radius:2px;
+	margin-top:-1px;
+	border:1px solid #BEBEBE;
+	height: 20px;
+	background: #F0F0F0;
+	text-align: left !important;
+}
+
+.action_part_button:hover span {
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+}
+
+.trainee_type {
+	font-family: Arial;
+	font-size: 12px;
+	color: #555555;
+}
+  
+.execute_button {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.edit_plan_button {
+	display: inline-block;
+}
+
+.delete_plan_button {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+/*course list*/
+#planCourseList {
+	margin-left: 160px;
+	margin-top: 10px;
+}
+
+.courseListHead {
+	width: 610px;
+}
+
+.headLeft {
+	background:
+		url(../../image/plan/selectCourse/IMG_ListTitle_Left_5x30.png)
+		no-repeat;
+}
+
+.headRight {
+	background:
+		url(../../image/plan/selectCourse/IMG_ListTitle_Right_5x30.png)
+		no-repeat;
+}
+
+.headLeft,.headRight {
+	display: inline-block;
+	height: 30px;
+	width: 5px;
+	float: left;
+}
+
+.titleBackGroud {
+	font-family: Arial Bold;
+	font-weight: Bold;
+	font-size: 14px;
+	background:
+		url(../../image/plan/selectCourse/IMG_ListTitle_Middle_1x30.png)
+		repeat-x;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+
+.noLabel {
+	width: 25px;
+}
+
+.nameLabel {
+	width: 140px;
+}
+
+.roomLabel {
+	width: 60px;
+}
+
+.dateLabel {
+	width: 80px;
+}
+
+.timeLabel {
+	width: 80px;
+}
+
+.durationLabel {
+	width: 40px;
+}
+
+.trainerLabel {
+	width: 90px;
+}
+
+.actionLabel {
+	display: inline;
+	width: 85px;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.courseListDateBg {
+	width: 610px;
+}
+
+.courseListDate {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	color: #555555;
+	background: url(../../image/plan/selectCourse/IMG_List_1x30.png)
+		repeat-x;
+	float: left;
+}
+
+.noShowLabel {
+	width: 30px;
+	text-align: center;
+}
+
+.shortLine {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*join & quit*/
+.join,.quit {
+	margin-top: 5px;
+	margin-left: 22px;
+	padding-top: 2px;
+	float: left;
+	width: 40px;
+	height: 21px;
+	line-height: 21px;
+	cursor: pointer;
+	text-align: center;
+	font: bold 12px arial;
+}
+
+.join {
+	background: url("../../image/dashboardIMG/BTN_Join_40x21.png")
+		transparent no-repeat;
+}
+
+a.join:hover {
+	background: url("../../image/dashboardIMG/BTN_Join_Hover_40x21.png")
+		transparent no-repeat;
+}
+
+.quit {
+	background: url("../../image/dashboardIMG/BTN_Quit_40x21.png")
+		transparent no-repeat;
+}
+
+a.quit:hover {
+	background: url("../../image/dashboardIMG/BTN_Quit_Hover_40x21.png")
+		transparent no-repeat;
+}
+
+/*leaveCourse & backCourse*/
+.leaveCourse,.backCourse {
+	margin-top: 5px;
+	margin-left: 13px;
+	padding-top: 2px;
+	float: left;
+	width: 60px;
+	height: 21px;
+	line-height: 21px;
+	cursor: pointer;
+	text-align: right;
+	font: bold 12px arial;
+}
+
+.leaveCourse {
+	background: url("../../image/plan/viewPlan/BTN_ApplyLeave_60x21.png")
+		transparent no-repeat;
+}
+
+a.leaveCourse:hover {
+	background: url("../../image/plan/viewPlan/BTN_ApplyLeave_Hover_60x21.png")
+		transparent no-repeat;
+}
+
+.backCourse {
+	background: url("../../image/plan/viewPlan/BTN_Back_60x21.png")
+		transparent no-repeat;
+}
+
+a.backCourse:hover {
+	background: url("../../image/plan/viewPlan/BTN_Back_Hover_60x21.png")
+		transparent no-repeat;
+}
+
+/*attachment*/
+#upload_r_attachment_detail {
+	
+}
+
+#upload_attachment_list {
+	margin-left: 160px;
+}
+
+#cancelContent {
+	width: 310px;
+	text-align: left;
+}
+
+#cancelPlanReason {
+	width: 290px;
+	height: 74px;
+	margin-top: 3px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/**/
+#invitedContent {
+	display: none;
+}
+
+#publichContent {
+	display: none;
+}
+
+#brief {
+	display: block;
+	overflow: auto;
+}
+
+.realNameSpan {
+	display: none;
+}
+
+.nameDetail {
+	width: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+#inputTipDiv {
+	position: absolute;
+	top: 80px;
+	left: 30px;
+	color: #BFBFBF;
+}
+<!-- apply leave confirm bar css -->
+#leaveContent {
+	width: 292px;
+	text-align: left;
+}
+
+.inputTipDiv_leave {
+	position: absolute;
+	top: 10px;
+	left: 7px;
+	color: #BFBFBF;
+}
+.leaveReason {
+	width: 290px; 
+	height: 74px;
+	margin-top: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.leave_name_span {
+	font-weight: bold;
+}
+
+.common_checkbox{
+    margin-right: 20px;
+}
+
+.planCourseTraner {
+	width:90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.realPlanCourseTranerSpan {
+	display: none;
+}

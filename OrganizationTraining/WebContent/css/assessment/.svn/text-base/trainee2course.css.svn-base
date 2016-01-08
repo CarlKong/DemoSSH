@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+#trainee2course_popup .assessment_popup_div {
+	width: 960px !important;
+}
+
+#trainee2course_popup .assessment_popup_titile {
+	width: 960px;
+}
+
+#trainee2course_popup #left_trainer {
+	float: left;
+}
+
+#trainee2course_popup #right_course {
+	float: left;
+}
+
+#trainee2course_popup .assess_title_middle {
+	width: 440px;
+}
+
+#trainee2course_popup .default_left {
+	height: 120px;
+}
+
+#trainee2course_popup .default_right {
+	height: 60px;
+}
+
+#trainee2course_popup .star_div {
+	margin-top: 4px;
+}
+
+#trainee2course_popup #star_div_2course_0 {
+	margin-top: 20px;
+}
+
+#trainee2course_popup .assess_comment {
+	width: 438px;
+	height: 88px;
+}
+
+#form_trainee2course .assessment_textarea .tipDiv{
+	margin-left:6px;
+	margin-top:-96px;
+	width: 444px;
+}
+
+#trainee2course_popup .star_div img {
+	margin-right: 4px;
+	margin-left: 1px;
+}

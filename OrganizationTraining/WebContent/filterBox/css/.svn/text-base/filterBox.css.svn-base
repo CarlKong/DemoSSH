@@ -1,0 +1,135 @@
+.filterDiv_common{
+	display: inline-block;
+	vertical-align: middle;
+    position:absolute;
+    z-index: 10;
+}
+
+.filterBtn{
+    border: none;
+    cursor:pointer;
+    position:relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.filter_no_dropDown{
+    width:30px;
+    height:30px;
+    margin-left:8px;
+    margin-right:8px;
+    background: url("../images/ICN_Filter_30x30.png");
+}
+
+.filter_dropDown{
+    width:34px;
+    height:34px;
+    margin-left:6px;
+    margin-right:6px;
+    background: url("../images/ICN_Filter_Active_34x34.png");
+}
+
+
+.filterBox{
+	display:none;
+	position:absolute;
+    top:31px;
+    left:-350px;
+	width:478px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	background-color: #F5F5F5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #BFBFBF;
+	z-index: 10;
+}
+
+.single_condition{
+    width:100%;
+    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid #FFFFFF;
+}
+
+.first_single_condition{
+    width:100%;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.last_single_condition{
+    width:100%;
+    border-top: 1px solid #FFFFFF;
+}
+
+.condition_title{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555555;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+
+.condition_optional{
+    font-family: arial;
+    font-size: 14px;
+    color: #555555;
+}
+.condition_optional p{
+    display: inline-block;
+    margin-right: 18px;
+    margin-bottom: 8px;
+}
+
+
+label{
+	display:inline-block;
+	vertical-align: text-bottom;
+}
+
+.span_checkbox{
+    display: inline-block;
+    width:14px;
+    height:15px;
+    margin-right:10px;
+    background: url("../images/ICN_Checkbox_14x15.png") no-repeat;
+    cursor: pointer;
+}
+
+.reset{
+	display:inline-block;
+    position: absolute;
+    top:20px;
+    font-family: arial;
+    font-size: 14px;
+    color: #418FB5;
+}
+
+.left_div{
+    width:219px;
+    float:left;
+}
+
+.right_div{
+    width:219px;
+    float:right;
+}
+
+.existedFlag{
+	display:none;
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:25px;
+	top:-3px;
+	z-index:3;
+	cursor:pointer;
+    background: url("../images/IMG_Filtered_16x16.png") no-repeat;
+}
+
+.span_checked {
+    background: url("../images/ICN_Checkbox_Active_14x15.png") no-repeat;
+}

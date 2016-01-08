@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap title="首页" href="#">
+    <firstNav title="课程" href="#"><!-- first node event defined in js-->
+        <secondNav title="搜索课程" href="course/course_searchCourse">
+        </secondNav>
+		<secondNav title="搜索课程" href="course/preSearchCourse">
+        </secondNav>
+        <secondNav title="编辑课程" href="course/toEditCourse">
+        </secondNav>
+        <secondNav title="创建课程" href="course/course_createCourse">
+        </secondNav>
+		<secondNav title="我的课程" href="plan/plan_myCourse">
+        </secondNav>
+        <secondNav title="C" href="course/viewCourseDetail">
+        </secondNav>
+		<secondNav title="C" href="course/viewTheRecordDetail">
+        </secondNav>
+        <secondNav title="C" href="course/viewPreviousRecordDetail">
+        </secondNav>
+        <secondNav title="C" href="course/viewNextRecordDetail">
+        </secondNav>
+    </firstNav>
+    
+    <firstNav title="计划" href="#"><!-- first node event defined in js-->
+        <secondNav title="搜索计划" href="plan/plan_searchPlan">
+        </secondNav>
+		<secondNav title="搜索计划" href="plan/preSearchPlan">
+        </secondNav>
+        <secondNav title="创建计划" href="plan/plan_createPlan">
+        </secondNav>
+        <secondNav title="我的计划" href="plan/plan_myPlan">
+        </secondNav>
+		<secondNav title="编辑计划" href="plan/toEditPlan">
+        </secondNav>
+        <secondNav title="P" href="plan/viewTheRecordDetail">
+        </secondNav>
+        <secondNav title="P" href="plan/viewPlanDetail">
+        	<thirdNav title="PC" href="plan/findActualCourseById">
+        	</thirdNav>
+        	<thirdNav title="PS" href="plan/findPlanSessionById">
+        	</thirdNav>
+        	<thirdNav title="A" href="assessment/prepareViewAllAssessment">
+        	</thirdNav>
+        </secondNav>
+        <secondNav title="P" href="plan/viewNextRecordDetail">
+            <thirdNav title="A" href="assessment/prepareViewAllAssessment">
+        	</thirdNav>
+        </secondNav>
+		<secondNav title="P" href="plan/viewPreviousRecordDetail">
+		    <thirdNav title="A" href="assessment/prepareViewAllAssessment">
+        	</thirdNav>
+        </secondNav>
+    </firstNav>
+
+    <firstNav title="管理员" href="#"><!-- first node event defined in js-->
+      <secondNav title="分配权限" href="roleList/roleList_roleList">
+      </secondNav>
+    </firstNav>
+</sitemap>
