@@ -1,0 +1,413 @@
+.createplan_content {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+	background-image: url("../../image/commonIMG/IMG_Background_4x4.png");
+}
+
+#title_plan_content {
+	padding-top: 20px;
+}
+
+.plan_tag {
+	font-weight: bold;
+}
+
+#plan_tagId {
+	padding-top: 5px;
+	position: relative;
+	line-height: 30px;
+}
+
+#plan_name_title {
+	margin-top: 5px;
+}
+
+#planBriefDiv {
+	padding: 2px 2px 2px 2px;
+	width: 458px;
+}
+
+#plan_brief_title {
+	margin-top: 5px;
+}
+
+#plan_brief_height {
+	height: 140px;
+}
+
+#planTagDiv {
+	width: 456px;
+}
+
+.plan_category_tag {
+	width: 610px;
+	margin-left: 160px;
+	position: relative;
+	height: 30px;
+}
+
+.plan_tag_input_blank {
+	width: 450px;
+	height: 28px;
+	position: absolute;
+	left: 150px;
+	padding-left: 1px;
+}
+
+.plan_tag_notice {
+	margin-left: 310px;
+	position: relative;
+	font-family: Arial;
+	font-size: 12px;
+	color: #808080;
+	margin-top: 3px;
+}
+
+.plan_common_tag {
+	margin-left: 310px;
+	position: relative;
+	width: 460px;
+	margin-top: 2px;
+}
+
+.pipe {
+	color: #555555;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.plan_common_tag_items {
+	color: #418FB5;
+	cursor: pointer;
+}
+
+.plan_type {
+	width: 610px;
+	margin-left: 160px;
+	position: relative;
+}
+
+.plan_type_content {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.plan_type_item {
+	left: 150px;
+	position: absolute;
+	width: 460px;
+}
+
+.plan_type_title0 {
+	margin-left: 24px;
+	margin-right: 40px;
+}
+
+.plan_type_image {
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	top: 4px;
+	width: 14px;
+}
+
+.plan_type_title1 {
+	margin-left: 24px;
+}
+
+#plan_invited_trainees {
+	background-color: #EAF5F9;
+	margin-left: 310px;
+	width: 460px;
+	position: relative;
+	display: none;
+}
+
+#plan_public_trainees {
+	background-color: #EAF5F9;
+	margin-left: 310px;
+	width: 460px;
+	position: relative;
+}
+
+.trainee_title {
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.invited_trainee_name {
+	padding-left: 5px;
+	position: relative;
+	font-weight: bold;
+}
+
+.invited_trainee_name_notice {
+	position: relative;
+	font-family: Arial;
+	font-size: 12px;
+	color: #555555;
+}
+
+.invited_trainee_input {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.invited_trainee_input_blank {
+	height: 88px;
+	width: 428px;
+}
+
+.trainee_notice {
+	position: relative;
+	font-size: 12px;
+	color: #808080;
+	padding-left: 10px;
+	margin-top: 2px;
+	display: none;
+}
+
+.display_trainee_notice {
+	position: relative;
+	font-size: 12px;
+	color: #808080;
+	padding-left: 10px;
+	margin-top: 2px;
+}
+
+.option_trainee_name {
+	padding-left: 5px;
+	position: relative;
+	font-weight: bold;
+}
+
+.option_trainee_name_notice {
+	position: relative;
+	font-size: 12px;
+}
+
+.option_trainee_input {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.option_trainee_input_blank {
+	height: 86px;
+	width: 428px;
+}
+
+.reminder_email {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: bold;
+}
+
+.reminder_time {
+	padding-bottom: 10px;
+	padding-left: 10px;
+	position: relative;
+}
+
+.reminder_time_image {
+	height: 14px;
+	position: absolute;
+	width: 14px;
+	top: 3px;
+}
+
+.reminder_time_title {
+	margin-left: 24px;
+	margin-right: 20px;
+}
+
+.trainee_name {
+	position: relative;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.trainee_scop {
+	padding-left: 10px;
+	position: relative;
+}
+
+.trainee_all_image {
+	height: 14px;
+	position: absolute;
+	top: 5px;
+	width: 14px;
+}
+
+.trainee_all_title {
+	margin-left: 24px;
+	margin-right: 40px;
+	position: relative;
+}
+
+.trainee_spec_image {
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	top: 5px;
+	width: 14px;
+}
+
+.trainee_spec_title {
+	margin-left: 24px;
+	position: relative
+}
+
+.trainee_input {
+	width: 440px;
+	height: 90px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	display: none;
+}
+
+.trainee_input_blank {
+	height: 86px;
+	width: 436px;
+}
+
+.register_notic {
+	padding-left: 10px;
+	position: relative;
+}
+
+.register_notic_image {
+	height: 14px;
+	position: absolute;
+	width: 14px;
+	top: 3px;
+}
+
+.register_notic_title {
+	position: relative;
+	margin-left: 24px;
+	margin-right: 40px;
+}
+
+.register_notic_no_image {
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	top: 3px;
+	width: 14px;
+}
+
+.register_notic_no_title {
+	position: relative;
+	margin-left: 24px;
+	margin-right: 40px;
+}
+
+.plan_course_list_title {
+	left: 160px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	width: 700px;
+}
+
+.plan_course_list_url {
+	color: #418FB5;
+	cursor: pointer;
+	left: 150px;
+	position: absolute;
+}
+
+.plan_course_list {
+	width: 940px;
+	left: 10px;
+	position: relative;
+}
+
+#sessionPart {
+	display: none;
+}
+
+#selectCoursePlan {
+	color: #418FB5;
+}
+
+.plan_attachment_list_title {
+	display: inline-block;
+	left: 160px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	width: 610px;
+}
+
+.plan_attachment_list_url {
+	color: #418FB5;
+	cursor: pointer;
+	left: 150px;
+	position: absolute;
+}
+
+.plan_attachment_list {
+	padding-bottom: 20px;
+	margin-left: 160px;
+}
+
+#planCourseJsonStr {
+	display: none;
+}
+
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 20px;
+}
+
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #FFF url(../../image/commonIMG/IMG_Background_4x4.png);
+	color: #555;
+}
+
+#plan_assessment label {
+	vertical-align: baseline;
+}
+
+#plan_assessment .assessSpan {
+	margin-right: 40px;
+}
+
+#plan_assessment {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#assess_notice {
+	display: block;
+	position: relative;
+	padding: 5px 0;
+}
+
+#plan_assessment_radios {
+	padding-bottom: 0px;
+}
+
+#orderButton {
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	bottom: 1px;
+	font-size: 12px;
+	line-height: 20px;
+	background:
+		url("../../image/plan/selectCourse/BTN_Sort by time_80x20.png.png")
+		no-repeat;
+	display: none;
+}

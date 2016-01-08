@@ -1,0 +1,312 @@
+@CHARSET "UTF-8";
+/* CSS 3 */
+
+#header_body {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 1000px;
+    height: 130px;
+}
+
+#header_top {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 60px;
+    background: url("../../image/headIMG/IMG_Head_1000x60.png");
+}
+
+#header_logo {
+    position: relative;
+    float: left;
+    margin: 15px 12px 0 20px;
+    width: 209px;
+    height: 36px;
+    background: url("../../image/headIMG/IMG_Augmentum_Logo_209x36.png") no-repeat;
+}
+
+#header_text {
+    position: relative;
+    float: left;
+    margin: 34px 0 0 0;
+}
+
+#header_text a {
+    float: left;
+    font-weight: bold;
+    color: #418FB5;
+    text-shadow: 1px -1px 14px #FFFFFF;
+}
+
+#header_top_right {
+    float: right;
+    font-size: 12px;
+    color: #418FB5;
+    height: 60px;
+    text-shadow: 1px -1px 12px #FFFFFF;
+}
+
+#header_login {
+    height: 20px;
+    margin: 10px 0 0 0;
+}
+    
+#header_login_name {
+    height: 20px;
+    margin: 0;
+}
+
+#header_login_control {
+    height: 20px;
+    margin: 0 20px 0 28px;
+    padding: 0 5px 0 0;
+    display: inline;
+}
+
+#header_i18n {
+    height: 30px;
+    width: 120px;
+    float: right;
+}
+
+#header_i18n a{
+    cursor: pointer;
+    margin: 5px 20px 0 0;
+}
+
+.cursor_hand{
+    cursor: pointer;
+    width: 90px;
+    height: 33px;
+}
+
+.cursor_hand a{
+    display: block;
+    width: 90px;
+}
+
+#header_i18n a {
+    float: right;
+    margin: 5px 20px 0 0;
+    padding: 0 5px 0 0;
+}
+
+#header_navigation {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 40px;
+    background: url("../../image/headIMG/IMG_Navigation_1000x40.png") no-repeat;
+}
+
+#header_navigation .header_navigation_start {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 33px;
+    float: left;
+}
+
+#header_navigation .header_navigation_button {
+    position: relative;
+    width: 90px;
+    height: 33px;
+    margin-top: 2px;
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#header_navigation .header_navigation_button a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 1px -1px 18px #418FB5;
+}
+
+#header_navigation .header_navigation_button  ul li a {
+	display: block;
+	width: 155px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 1px -1px 18px #418FB5;
+}
+
+#header_navigation .header_navigation_button:HOVER {
+    background: url("../../image/headIMG/IMG_Checked_Background_90x33.png") no-repeat;
+}
+
+#header_navigation .header_navigation_button ul {
+    position: absolute;
+    top: 30px;
+    right: -65px;
+    visibility: hidden;
+    width: 155px;
+    height: 60px;
+    padding-top: 4px;
+    z-index: 9999;
+    text-align: left;
+}
+
+#header_navigation .header_navigation_button ul li {
+    height: 30px;
+    background: url("../../image/headIMG/IMG_Dropdown_155x30.png") no-repeat;
+}
+
+#header_navigation .header_navigation_button ul li:HOVER {
+    height: 30px;
+    background: url("../../image/headIMG/IMG_Dropdown_Active_155x30.png") no-repeat;
+}
+
+#header_navigation .header_navigation_button ul li:LAST-CHILD {
+    height: 30px;
+    background: url("../../image/headIMG/IMG_Dropdown_Bottom_155x30.png") no-repeat;
+}
+
+#header_navigation .header_navigation_button ul li:LAST-CHILD:HOVER {
+    height: 30px;
+    background: url("../../image/headIMG/IMG_Dropdown_Bottom_Active_155x30.png") no-repeat;
+}
+
+#header_navigation .header_navigation_button ul li a {
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#header_navigation .header_navigation_end {
+    height: 40px;
+    width: 147px;
+    float: right;
+    cursor: pointer;
+}
+
+#header_navigation .header_navigation_end .header_navigation_create {
+    height: 28px;
+    width: 124px;
+    margin: 5px 20px 0 0;
+}
+
+#header_navigation .header_navigation_end .header_navigation_create:HOVER {
+    height: 28px;
+    width: 124px;
+    margin: 5px 20px 0 0;
+}
+
+.header_navigation_create_button, #header_navigation_create_button {
+    position:absolute;
+    z-index:9999;
+    background: url("../../image/headIMG/BTN_CreateNew_124x28.png") no-repeat;
+    height: 28px;
+    width: 124px;
+    color: #FFFFFF;
+}
+
+.header_navigation_create_button_hover {
+    position:absolute;
+    z-index:9999;
+    background: url("../../image/headIMG/BTN_CreateNew_Hover_124x28.png") no-repeat;
+    color: #FFFFFF;
+    height: 28px;
+    width: 124px;
+}
+
+#header_navigation_create_down{
+    position:absolute;
+    z-index: 100;
+    top: 30px;
+    margin-left: 2px;
+}
+
+#header_navigation .header_navigation_end .header_navigation_create a {
+    height: 28px;
+    line-height: 28px;
+    width: 124px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 28px #419025;
+}
+
+.show_dropdown {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    height: 8px;
+    width: 12px;
+    background: url("../../image/headIMG/IMG_Dropdown_12x8.png") no-repeat;
+}
+
+.change_dropdown {
+	position: absolute;
+    top: 10px;
+    left: 100px;
+    height: 8px;
+    width: 12px;
+    background: url("../../image/headIMG/IMG_Dropdown_Active_12x8.png") no-repeat;
+}
+
+#header_navigation_create_down ul {
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    height: 50px; /*26+24*/
+    z-index: 1000;
+}
+
+#header_navigation_create_down ul li:FIRST-CHILD {
+    height: 26px;
+    background: url("../../image/headIMG/IMG_CreateNew_Dropdown_Top_120x26.png") no-repeat;
+}
+
+#header_navigation_create_down ul li:FIRST-CHILD:hover {
+    height: 26px;
+    background: url("../../image/headIMG/IMG_CreateNew_Dropdown_Top_Active_120x26.png") no-repeat;
+}
+
+#header_navigation_create_down ul li:LAST-CHILD {
+    height: 24px;
+    background: url("../../image/headIMG/IMG_CreateNew_Dropdown_Bottom_120x24.png") no-repeat;
+}
+
+#header_navigation_create_down ul li:LAST-CHILD:hover {
+    height: 24px;
+    background: url("../../image/headIMG/IMG_CreateNew_Dropdown_Bottom_Active_120x24.png") no-repeat;
+}
+
+#header_navigation_create_down ul li a {
+    line-height: 24px !important;
+    text-shadow: none !important;
+    color: #65A64B;
+}
+
+#header_crumbs {
+    color: #418FB5;
+    font-family: Arial;
+    font-size: 14px;
+    width: 960px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    visibility: visible;
+    position: relative;
+    z-index: -1;
+}
+
+.navigate{
+    color: #418FB5;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.navigate:LAST-CHILD {
+	font-weight: bold;
+    color: #555555;
+    cursor: default;
+}

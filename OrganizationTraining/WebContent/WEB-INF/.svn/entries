@@ -1,0 +1,91 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+course
+dir
+
+tld
+dir
+
+assessment
+dir
+
+lib
+dir
+
+dashboard
+dir
+
+applicationContext.xml
+file
+
+
+
+
+2013-06-27T03:14:13.038075Z
+5d5aac903a6b0283308470716bafa723
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+common
+dir
+
+error
+dir
+
+plan
+dir
+
+web.xml
+file
+
+
+
+
+2013-06-27T03:14:13.038075Z
+f846f29563ebfb7ec5d40b57bb0bec67
+2013-03-27T08:05:36.029257Z
+28726
+margaret.wang
+
+roleList
+dir
+
+rest-servlet.xml
+file
+
+
+
+
+2013-06-27T03:14:13.053668Z
+26410371e2d1e176e75116d8cd132af5
+2012-11-06T07:44:26.386051Z
+20028
+sherry.zhang
+

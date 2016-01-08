@@ -1,0 +1,52 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/css/headAndFoot
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+headCss.css
+file
+
+
+
+
+2013-06-27T03:14:13.427880Z
+0c6e318556a89e46f5892913afc419ff
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+footCss.css
+file
+
+
+
+
+2013-06-27T03:14:13.427880Z
+d3aa7ef1288e0f018c4158601b233ad0
+2012-11-28T10:22:50.682919Z
+22204
+hector.he
+

@@ -1,0 +1,130 @@
+body {
+	
+}
+
+.more_link {
+	cursor: pointer;
+}
+
+.table_header {
+	width: 510px;
+	height: 30px;
+}
+
+.plan_and_course_list {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	width: 520px;
+}
+
+.table_second_title {
+	line-height: 20px;
+	width: 520px;
+}
+
+.content_status {
+	width: 10px;
+}
+
+.content_name_title {
+	width: 210px;
+}
+
+.content_name {
+	width: 200px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	color: #418FB5;
+}
+
+.content_date {
+	width: 80px;
+}
+
+.content_time {
+	width: 80px;
+}
+
+.content_room {
+	width: 60px;
+}
+
+.content_type {
+	width: 80px;
+}
+
+.content_publish_time {
+	width: 140px;
+}
+
+.content_trainees {
+	width: 80px;
+}
+
+.content_trainer_tilte {
+	width: 80px;
+}
+
+.content_trainer {
+	width: 80px;
+	color: #418FB5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.content_row div {
+	float: left;
+	line-height: 20px;
+	height: 20px;
+}
+
+.content_realName {
+	display: none;
+}
+
+.content_realTrainers {
+	display: none;
+}
+
+.master {
+	margin-bottom: 20px;
+	border-bottom: 1px solid;
+	border-bottom-color: #CCCCCC;
+}
+
+.trainee {
+	margin-bottom: 20px;
+	border-bottom: 1px solid;
+	border-bottom-color: #CCCCCC;
+}
+
+.trainer {
+	margin-bottom: 20px;
+	border-bottom: 1px solid;
+	border-bottom-color: #CCCCCC;
+}
+
+.table_content_default {
+	background: #F2F2F2 url(../../image/dashboardIMG/loading.gif) no-repeat
+		50% 50%;
+	opacity: 0.5;
+	height: 80px;
+}
+
+.planCourse,.planSession,.plan {
+	cursor: pointer;
+}
+
+.content_row_white {
+	background-color: #FFFFFF;
+}
+
+.content_row_gray {
+	background-color: #F5F5F5;
+}

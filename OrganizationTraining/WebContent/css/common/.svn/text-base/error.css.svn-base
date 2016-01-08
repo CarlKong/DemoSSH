@@ -1,0 +1,117 @@
+.html_body_div {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	line-height: 1;
+}
+
+.error_background {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: url("../../image/commonIMG/IMG_Background_4x4.png") repeat;
+  height: 400px;
+}
+
+.message_background {
+  background: url("../../image/error/BKG_Message_640x280.png") no-repeat;
+  height: 280px;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.error_image_404 {
+  float: left;
+  background: url("../../image/error/IMG_404_234x101.png") no-repeat;
+  width: 234px;
+  height: 101px;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+.error_image_500 {
+  float: left;
+  background: url("../../image/error/IMG_500_234x101.png") no-repeat;
+  width: 234px;
+  height: 101px;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+.error_message_404_500 {
+  float: left;
+  margin-bottom: 78px;
+  margin-top: 160px;
+  margin-left: 20px;
+  width: 174px;
+}
+
+.error_text_404_500 {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight:normal;
+  color: #BFBFBF;
+  height: 28px;
+}
+
+.error_image_access {
+  float: left;
+  background: url("../../image/error/IMG_NoAccess_275x101.png") no-repeat;
+  width: 275px;
+  height: 101px;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+.error_message_access {
+  float: left;
+  margin-bottom: 78px;
+  width: 132px;
+  margin-top: 160px;
+  margin-left: 20px;
+}
+
+.error_text_access {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight:normal;
+  color: #BFBFBF;
+  height: 28px;
+}
+
+.error_image_wrong {
+  float: left;
+  background: url("../../image/error/IMG_Wrong_320x101.png") no-repeat;
+  width: 320px;
+  height: 101px;
+  margin-top: 130px;
+  margin-left: 50px;
+}
+
+.error_message_wrong {
+  float: left;
+  width: 132px;
+  margin-top: 160px;
+  margin-left: 20px;
+  margin-bottom: 78px;
+  
+}
+
+.error_text_wrong {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight:normal;
+  color: #BFBFBF;
+  height: 28px;
+}
+
+.error_click_home,.error_click_search {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight:normal;
+  color: #418FB5;
+  height: 14px;
+  cursor: pointer;
+}

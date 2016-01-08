@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment
+END
+trainee2plan.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/trainee2plan.jsp
+END
+viewAssessmentToCourse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/viewAssessmentToCourse.jsp
+END
+viewAssessment2Trainer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/viewAssessment2Trainer.jsp
+END
+viewAllAssessment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/viewAllAssessment.jsp
+END
+trainee2course.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/trainee2course.jsp
+END
+viewAssessment2Trainee.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/viewAssessment2Trainee.jsp
+END
+trainer2trainee.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/trainer2trainee.jsp
+END
+viewAssessmentToPlan.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/viewAssessmentToPlan.jsp
+END
+trainer2plan.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/trainer2plan.jsp
+END
+master2trainer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/assessment/master2trainer.jsp
+END

@@ -1,0 +1,268 @@
+@CHARSET "UTF-8";
+
+.to_do_list {
+	width: 400px;
+	position: relative;
+}
+
+.todo-div-loader{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.6;
+	background: #DDD url(../../image/dashboardIMG/loading.gif) no-repeat 50% 50%;
+	z-index: 9999999;
+}
+
+.training_master_part {
+	display: inline-block;
+	position: relative;
+}
+
+.trainer_part {
+	position: relative;
+}
+
+.trainee_part {
+	position: relative;
+}
+
+.role_part_title {
+	width: 390px;
+	height: 30px;
+	line-height: 30px;
+	background: url(../../image/dashboardIMG/IMG_Title_2_1x30.png) repeat-x;
+	text-align: left;
+	color: #71B3D6;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.page_button {
+	display: none;
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+
+.toDo_page_left,.toDo_page_right,.toDo_page_left_disable,.toDo_page_right_disable
+	{
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	float: left;
+}
+
+.toDo_page_left {
+	background: url(../../image/dashboardIMG/ICN_Previous_2_24x24.png)
+		no-repeat;
+}
+
+.toDo_page_left:HOVER {
+	background: url(../../image/dashboardIMG/ICN_Previous_2_Hover_24x24.png)
+		no-repeat;
+}
+
+.toDo_page_left_disable {
+	background: url(../../image/dashboardIMG/ICN_Previous_Disable_24x24.png)
+		no-repeat;
+}
+
+.toDo_page_right {
+	margin-left: 2px;
+	background: url(../../image/dashboardIMG/ICN_Next_2_24x24.png) no-repeat
+		;
+}
+
+.toDo_page_right:HOVER {
+	margin-left: 2px;
+	background: url(../../image/dashboardIMG/ICN_Next_2_Hover_24x24.png)
+		no-repeat;
+}
+
+.toDo_page_right_disable {
+	margin-left: 2px;
+	background: url(../../image/dashboardIMG/ICN_Next_Disable_24x24.png)
+		no-repeat;
+}
+
+#toDoList_header {
+	width: 390px;
+}
+
+.toDoList_title {
+	margin-left: 5px;
+	float: left;
+}
+
+.toDoList_count {
+	margin-left: 10px;
+	float: left;
+}
+
+.toDoList_refresh {
+	margin-top: 3px;
+	margin-right: 5px;
+	float: right;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background: url(../../image/dashboardIMG/ICN_Refresh_24x24.png)
+		no-repeat;
+}
+
+.toDoList_refresh:HOVER {
+	cursor: pointer;
+	background: url(../../image/dashboardIMG/ICN_Refresh_Hover_24x24.png)
+		no-repeat;
+}
+
+.prepare_content {
+	background: url(../../image/dashboardIMG/IMG_List_1x30.png);
+	display: inline-block;
+}
+
+#training_master_content,#trainer_content {
+	width: 400px;
+	height: 80px;
+}
+
+#trainee_content {
+	width: 400px;
+	height: 120px;
+}
+
+.count_left,.count_right {
+	margin-top: 6px;
+	float: left;
+	display: inline-block;
+	height: 20px;
+	width: 10px;
+}
+
+.count_mid {
+	margin-top: 6px;
+	float: left;
+	display: inline-block;
+	height: 20px;
+	width: auto;
+	background: url(../../image/dashboardIMG/IMG_Message_Middle_1x20.png)
+		repeat-x;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.count_left {
+	background: url(../../image/dashboardIMG/IMG_Message_Left_10x20.png)
+		no-repeat;
+}
+
+.count_right {
+	background: url(../../image/dashboardIMG/IMG_Message_Right_10x20.png)
+		no-repeat;
+}
+
+.toDo_content {
+	width: 400px;
+	height: 40px;
+	background: url(../../image/dashboardIMG/IMG_List_2_1x40.png) repeat-x;
+	display: inline-block;
+	font-size: 12px;
+	position: relative;
+}
+
+.show_data_span {
+	width: 330px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+
+.duration_time_span {
+	color: #D4A639;
+	width: 90px;
+	margin-left: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.assess_button_div {
+	position: absolute;
+	z-index: 2;
+	bottom: 11px;
+	right: 5px;
+	width: 37px;
+}
+
+.assess_button_ok {
+	cursor: pointer;
+	width: 16px;
+	height: 17px;
+	display: inline-block;
+	background: url(../../image/dashboardIMG/ICN_OK_16x17.png) no-repeat;
+}
+
+.assess_button_ok:HOVER {
+	background: url(../../image/dashboardIMG/ICN_OK_Hover_16x17.png)
+		no-repeat;
+}
+
+.assess_button_no {
+	cursor: pointer;
+	width: 16px;
+	height: 17px;
+	display: inline-block;
+	margin-left: 5px;
+	background: url(../../image/dashboardIMG/ICN_Close_16x17.png) no-repeat;
+}
+
+.assess_button_no:HOVER {
+	background: url(../../image/dashboardIMG/ICN_Close_Hover_16x17.png)
+		no-repeat;
+}
+
+a.viewPlanOrCourse {
+	cursor: pointer;
+	color: #418FB5;
+	text-decoration: none;
+}
+
+.show_value_div {
+	display: none;
+	font-size: 12px;
+}
+
+.toDo_num {
+	margin-left: 10px;
+}
+
+.toDo_top_line {
+	height: 20px;
+	line-height: 20px;
+}
+
+.handle_plan_button {
+	position: absolute;
+	z-index: 2;
+	bottom: 11px;
+	right: 26px;
+	width: 16px;
+	height: 17px;
+	display: inline-block;
+	background: url(../../image/dashboardIMG/ICN_OK_16x17.png) no-repeat;
+	cursor: pointer;
+}
+
+.handle_plan_button:HOVER {
+	background: url(../../image/dashboardIMG/ICN_OK_Hover_16x17.png)
+		no-repeat;
+}
+
+.id_span {
+	font-weight: bold;
+}

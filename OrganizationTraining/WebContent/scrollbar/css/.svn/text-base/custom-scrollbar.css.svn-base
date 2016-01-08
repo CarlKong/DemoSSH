@@ -1,0 +1,49 @@
+.custom-scrollbar-container{
+	position:relative;
+}
+.custom-scrollbar-viewport{
+	position:relative;
+	overflow:hidden;
+ 
+}
+.custom-scrollbar-overview{
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+.custom-scrollbar-vertical{
+	position: absolute; 
+	left:0;
+	top:0;
+}
+.custom-scrollbar{
+	border-radius:10px;
+	background:#BBB;
+}
+.custom-scrollbar-horizontal{
+	position: absolute; 
+	left:0;
+	top:0;
+}
+.custom-scrollbar-thumb{
+	cursor: pointer;
+	overflow: hidden; 
+	position: absolute; 
+	top: 0;
+	border-radius:10px;
+	background:#888;
+}
+.custom-scrollbar-disable{
+ 	display:none;
+}
+.custom-scrollbar-noSelect{
+	user-select: none; 
+	-o-user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+}
+ 

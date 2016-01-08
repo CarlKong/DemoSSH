@@ -1,0 +1,37 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/jquery.poshytip
+http://192.168.1.100/InternalApp/svn
+
+
+
+2012-12-14T07:49:26.009558Z
+23607
+hector.he
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+images
+dir
+
+css
+dir
+
+js
+dir
+

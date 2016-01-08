@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TrainingManagement" default="startApplication" basedir=".">
+	<!-- load properties file-->
+    <property file="build.properties"/>
+	<!-- classpath-->
+    <path id="all-libs">
+       	<fileset dir="${webapp.webinf_lib}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${tomcat.home}/lib">
+			<include name="jsp-api.jar"/>
+			<include name="servlet-api.jar"/>
+		</fileset>
+    </path>
+	<path id="classpath.catalina">
+		<fileset dir="${tomcat.lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask">
+		<classpath>
+	    	<path location="${tomcat.home}/lib/catalina-ant.jar"/>
+	    </classpath>
+	</taskdef>
+	<target name="UnDeploy" description="undeploy the application" if="tomcatIsStarted">
+		<undeploy url="${tomcat.manager.url}"
+	          username="${tomcat.username}"
+	          password="${tomcat.password}"
+	          path="/${webapp.context}"/>
+	</target>
+	<!-- stop tomcat-->
+	<target name="stopTomcat" description="stop the tomcat service">
+		<exec executable="SCHTASKS">
+			<arg value="/Run"/>
+			<arg value="/TN"/> 
+			<arg value="StopTomcat"/>
+		</exec>
+		<java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+	    	<jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+	   		<arg line="stop"/>
+	    </java>
+	</target>
+    <!-- clean -->
+    <target name="clean" description="Clean all output dirs">
+        <delete dir="${webapp.webinf_Class}"/>
+        <delete dir="${webapp.context}"/>
+        <delete dir="${javadoc.dir}"/>
+    	<delete dir="${test.outFolder}"/>
+    	<delete dir="${test.reportFolder}"/>
+		<delete dir="${webapp.deploy_path}/${webapp.context}"/>
+    	<delete file="${webapp.deploy_path}/${webapp.context}.war"/>
+     </target>
+    <!-- init -->
+    <target name="init" depends="clean" description="Prepare for build, like mkdir classes" >
+         <mkdir dir="${webapp.webinf_Class}"/>
+    	 <mkdir dir="${test.outFolder}"/>
+    	 <mkdir dir="${test.reportFolder}"/>
+    </target>
+    <!-- compile -->
+    <target name="compile" depends="clean,init" 
+                            description="Compile the source and copy the resouse file">
+    	<javac destdir="${webapp.webinf_Class}" source="1.6"
+                     memoryinitialsize="256m" memorymaximumsize="256m">
+        	<src path="${src.dir}"/>
+          	<classpath refid="all-libs"/>
+       	</javac>
+        <copy todir="${webapp.webinf_Class}"  preservelastmodified="true">
+        	<fileset dir="${conf.dir}">
+            	<patternset>
+                    <include name="**/*.conf" />
+                    <include name="**/*.properties" />
+                    <include name="**/*.xml" />
+                	<include name="**/*.dic"/>
+                </patternset>
+            </fileset>
+        	<fileset dir="${conf.windows.dir}">
+        		<patternset>
+        	    	<include name="**/*.conf" />
+        	        <include name="**/*.properties" />
+        	        <include name="**/*.xml" />
+        	        <include name="**/*.dic"/>
+        	    </patternset>
+        	</fileset>
+       	</copy>
+	</target>
+	<!-- PMD -->
+	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask">
+		<classpath>
+			<path location="${webapp.webinf_lib}/pmd-4.3.jar"/>
+		</classpath>
+	</taskdef>
+	<target name="pmd" depends="compile">
+		<pmd rulesetfiles="${rulesets.dir}/favorites.xml">
+			<formatter type="net.sourceforge.pmd.renderers.HTMLRenderer" toFile="${pmdResult.dir}/PMD_report.html"/>
+			<formatter type="xml" toFile="${pmdResult.dir}/PMD_report.xml"/>
+			<fileset dir="${src.dir}">
+				<include name="**/*.java"/>
+			</fileset>
+		</pmd>
+	</target>
+	<!-- sonar -->
+	<property name="sonar.host.url" value="http://192.168.22.150:9000" />
+	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml" > 
+		<classpath path="${webapp.webinf_lib}/sonar-ant-task-1.4.jar"></classpath>
+	</taskdef>
+	<target name="sonar_java" > 
+		<sonar:sonar  key="OT(JAVA)" version="1.0" xmlns:sonar="antlib:org.sonar.ant">  
+			<sources> 
+				<path location="${src.dir}" />
+			</sources> 
+			<property key="sonar.dynamicAnalysis" value="false" /> 
+			<property key="sonar.language" value="java" /> 
+			<property key="sonar.projectName" value="OT-JAVA" />
+		</sonar:sonar> 
+	</target>
+	<target name="sonar_jsp" depends="sonar_java"> 
+		<sonar:sonar  key="OT(JSP)" version="1.0" xmlns:sonar="antlib:org.sonar.ant">  
+			<sources> 
+				<path location="${webapp.webinf}" /> 
+			</sources> 
+			<property key="sonar.dynamicAnalysis" value="false" /> 
+			<property key="sonar.language" value="web" /> 
+			<property key="sonar.projectName" value="OT-JSP" />
+		</sonar:sonar> 
+	</target>
+	<target name="sonar_js" description="Sonar js Analysis" depends="sonar_jsp"> 
+		<sonar:sonar  key="OT(JS)" version="1.0" xmlns:sonar="antlib:org.sonar.ant">  
+			<sources> 
+				<path location="${webapp.js}"/>
+			</sources> 
+			<property key="sonar.language" value="js" /> 
+			<property key="sonar.projectName" value="OT-JS" />
+			<property key="sonar.sourceEncoding" value="UTF-8"/>
+		</sonar:sonar> 
+	</target> 
+	<target name= "sonar-result" depends="sonar_js">
+      <exec dir="${webapp.webinf_lib}" executable="cmd">
+      	<arg line = "/c ot_sonar_result.bat"/>
+   	  </exec>
+   </target>
+	<!-- main test -->
+	<target name="mainTest" depends="clean,init,compile,reClean" 
+	                            description="Compile the test source and run junit test">
+		<echo>----- compile the test code ------</echo>
+		<javac destdir="${test.srcFolder}" source="1.6"
+	                     memoryinitialsize="256m" memorymaximumsize="256m">
+			<src path="${test.srcFolder}"/>
+			<classpath refid="all-libs"/>
+			<classpath location="${webapp.webinf_Class}"/>
+		</javac>
+		<echo>------ compile the test code completed -----</echo>
+		<echo>-----------------------------------------</echo>
+		<echo>------------junit test start---------------</echo>
+		<junit dir="${basedir}" printsummary="on" fork="true" showoutput="true"> 
+			<classpath location="${test.srcFolder}"/>
+			<classpath refid="all-libs"/> 
+			<classpath location="${webapp.webinf_Class}"/>
+			<formatter type="xml" /> 
+			<batchtest todir="${test.reportFolder}"> 
+				<fileset dir="${test.srcFolder}"> 
+					<include name="**/*.*" /> 
+				</fileset> 
+			</batchtest> 
+		</junit> 
+		<junitreport todir="${test.reportFolder}"> 
+			<fileset dir="${test.reportFolder}"> 
+				<include name="TEST-*.xml" /> 
+			</fileset> 
+			<report format="frames" todir="${test.reportFolder}" /> 
+		</junitreport> 
+	</target>
+    <!-- unpack to xxx -->
+	<target name="dist" description="Unpack the file to war file" depends="compile">
+		<war basedir="${webRoot.dir}" warfile="${webapp.deploy_path}/${webapp.context}.war"
+                                    webxml="${webRoot.dir}/WEB-INF/web.xml">
+			<exclude name="WEB-INF/web.xml"/>
+			<exclude name="WEB-INF/lib/junit-4.4.jar"/>
+
+       </war>
+	</target>
+	<target name="startService" depends="dist">
+		<exec executable="SCHTASKS">
+			<arg value="/Run"/>
+			<arg value="/TN"/> 
+			<arg value="Tomcat"/>
+		</exec>
+	</target>
+	<target name="reClean" description="clean the project">
+		 <delete dir="${webapp.webinf_Class}"/>
+	</target>
+	<target name="startApplication" description="start application" depends="dist,reClean,startService,pmd,sonar_js,sonar-result">
+	</target>
+	
+</project>

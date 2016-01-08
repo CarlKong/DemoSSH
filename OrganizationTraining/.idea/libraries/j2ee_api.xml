@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="j2ee-api">
+    <CLASSES>
+      <root url="jar://D:/dev/tomcat6.0.44/lib/annotations-api.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/catalina-ant.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/catalina-ha.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/catalina-tribes.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/catalina.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/ecj-4.3.1.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/el-api.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/jasper-el.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/jasper.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/jsp-api.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/servlet-api.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/tomcat-coyote.jar!/" />
+      <root url="jar://D:/dev/tomcat6.0.44/lib/tomcat-dbcp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+		id="WebApp_ID" version="2.5">
+	<display-name>OrganizationTraining</display-name>
+
+	<welcome-file-list>
+		<welcome-file>/login.jsp</welcome-file>
+	</welcome-file-list>
+	<!--  字符编码过滤器  -->
+	<filter>
+        <filter-name>encodingFilter</filter-name>
+        <!-- Spring的字符集过滤通过用于处理项目中的乱码问题  -->
+        	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <!--  初始化了两个参数分别是：encoding和forceEncoding  -->
+        <init-param>
+        	<!-- encoding：字符集，即将过滤到的request的字符集设置为encoding指定的值，如UTF-8等，相当于：
+        		 request.setCharacterEncoding -->
+        	<param-name>encoding</param-name>
+        	<param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+        	<!-- 这个参数其实就是设置response的字符集是否也是和前面Request的字符集一致，TRUE是一致，false是不一致。 -->
+        	<param-name>forceEncoding</param-name>
+        	<param-value>true</param-value>
+        </init-param>
+    </filter>
+    
+    <!-- 
+    filter-mapping元素用来声明Web应用中的过滤器映射。
+    	  过滤器可被映射到一个servlet或一个URL模式。
+    	  将过滤器映射到一个servlet中会造成过滤器作用于servlet上。
+    	  将过滤器映射到一个URL模式中则可以将过滤器应用于任何资源，只要该资源的URL与URL模式匹配。
+    	  过滤是按照部署描述符的filter-mapping元素出现的顺序执行的。-->
+    <filter-mapping>
+    	<!-- filter-maping 里面主要放置如下4个东西
+    			1. filter-name
+    			2. url-pattern
+    			3. dispatcher:4个值：REQUEST FORWARD INCLUDE ERROR
+    			4. servlet-name
+    	 -->
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+	
+	<listener>
+		<listener-class>com.augmentum.ot.listener.CustomSpringListener</listener-class>
+	</listener>
+	<!-- Spring的配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+            /WEB-INF/applicationContext.xml
+        </param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>com.augmentum.ot.listener.TimeListener</listener-class>
+	</listener>
+	<!--Struts2的请求分发器，就是帮助我们找到把请求找到对应的Action层的方法 -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+    <servlet>
+		<display-name>InitPrivliegeValue</display-name>
+		<servlet-name>InitPrivliegeValue</servlet-name>
+		<servlet-class>com.augmentum.ot.initServlet.InitPrivliegeValue</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitPrivliegeValue</servlet-name>
+		<url-pattern>/InitPrivliegeValue</url-pattern>
+	</servlet-mapping>
+
+	<!-- configure custom tlg for privilege-->
+	<jsp-config>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/privilege</taglib-uri>
+			<taglib-location>/WEB-INF/tld/privilege.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/planStatusControl</taglib-uri>
+			<taglib-location>/WEB-INF/tld/planStatusControl.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<!-- 如果需要国际化的还要配置一个自己写的国际化的过滤器。 -->
+	<filter>
+		<filter-name>I18nFilter</filter-name>
+		<filter-class>com.augmentum.ot.filter.I18nFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>I18nFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+</web-app>

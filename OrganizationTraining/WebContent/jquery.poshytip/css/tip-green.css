@@ -1,0 +1,61 @@
+.tip-green {
+	z-index:1000;
+	text-align:left;
+	padding:7px 10px;
+	min-width:50px;
+	max-width:250px;
+	color:#D4A639;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid #f9f2a7;
+    background-color: #feffe5;
+    border-radius: 5px;
+    word-wrap : break-word;
+	/**
+	 * - If you set a background-image, border/padding/background-color will be ingnored.
+	 *   You can set any padding to .tip-inner instead if you need.
+	 * - If you want a tiled background-image and border/padding for the tip,
+	 *   set the background-image to .tip-inner instead.
+	 */
+}
+.tip-green .tip-inner {
+	font:12px/1.5 arial,helvetica,sans-serif;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-green .tip-arrow-top {
+	margin-top:-10px;
+	margin-left:6px;
+	left:0;
+	bottom:100%;
+	width:13px;
+	height:13px;
+	background:url(../images/tip-green_arrows.png) no-repeat;
+}
+.tip-green .tip-arrow-right {
+	margin-top:6px;
+	margin-left:0;
+	top:0;
+	left:100%;
+	width:13px;
+	height:13px;
+	background:url(../images/tip-green_arrows.png) no-repeat -13px 0;
+}
+.tip-green .tip-arrow-bottom {
+	margin-top:0;
+	margin-left:6px;
+	top:100%;
+	left:0;
+	width:13px;
+	height:13px;
+	background:url(../images/tip-green_arrows.png) no-repeat -26px 0;
+}
+.tip-green .tip-arrow-left {
+	margin-top:6px;
+	margin-left:-20px;
+	top:0;
+	right:100%;
+	width:13px;
+	height:13px;
+	background:url(../images/tip-green_arrows.png) no-repeat -39px 0;
+}

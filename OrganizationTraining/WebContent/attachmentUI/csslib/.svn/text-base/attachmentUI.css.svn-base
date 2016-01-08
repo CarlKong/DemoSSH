@@ -1,0 +1,168 @@
+@CHARSET "UTF-8";
+
+.clear {
+	clear: both;
+}
+
+.attachment-ui {
+	display: inline-block;
+}
+
+.attachment-ui form {
+	margin-bottom: 0px;
+}
+
+.attachment-head {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #71b3d6;
+	height: 30px;
+	line-height: 30px;
+	width: auto;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+
+.show-attachment-div {
+	display: inline-block;
+}
+
+.show-attachment-div-scroll {
+	overflow: hidden;
+	position: relative;
+}
+
+.real-attachment-data-div {
+	display: inline-block;
+}
+
+.real-attachment-data-div-scroll {
+	position: absolute;
+}
+
+.attachment-item-data {
+	color: #555;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	background: url("../img/IMG_List_1x30.png") repeat-x;
+	
+}
+
+.attachment-item-field {
+	float: left;
+	height: 30px;
+	display: inline-block;
+}
+
+.attachment-item-field>.hideName {
+	display: none;
+}
+
+.child-field {
+	margin-left: 10px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.checkbox-checked, .checkbox-unchecked {
+	display: inline-block;
+	width: 14px;
+	height: 15px;
+	cursor: pointer;
+}
+
+.checkbox-checked {
+	background: url("../img/ICN_Checkbox_Active_14x15.png") no-repeat;
+}
+
+.checkbox-unchecked {
+	background: url("../img/ICN_Checkbox_14x15.png") no-repeat;
+}
+
+.delete-button {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	cursor: pointer;
+	background: url("../img/ICN_Delete_16x17.png");
+}
+
+.delete-button:HOVER {
+	background: url("../img/ICN_Delete_Hover_16x17.png");
+}
+
+.selected-result, .unselected-result {
+	display: inline-block;
+	width: 26px;
+	height: 18px;
+}
+
+.selected-result {
+	background: url("../img/ICN_Visible_26x18.png");
+}
+
+.unselected-result {
+	background: url("../img/ICN_Invisible_26x18.png");
+}
+
+.download-button {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background: url("../img/ICN_Download_16x17.png");
+	cursor: pointer;
+}
+
+.download-button:HOVER {
+	background: url("../img/ICN_Download_Hover_16x17.png");
+}
+
+/*************** progress bar **********************/
+.loading {
+	margin-top: 7px;
+	height:16px; 
+	background-color:gray; 
+	border-radius: 8px;
+}
+
+.loading div{ 
+	margin-top: 7px;
+	width: 0px;
+	height: 16px;
+	background-color: #7CB256;
+	border-radius: 8px;
+	background-image: -webkit-linear-gradient(135deg, rgba(255,255,255,.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.2) 50%, rgba(255,255,255,.2) 75%, transparent 75%, transparent);
+	background-size: 10px 10px;
+}
+
+/*************** scroll bar **********************/
+.vertical-slide {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0.5;
+	width: 12px;
+	border-radius: 6px;
+	background-color: #BBB; 
+	display: none;
+}
+
+.vertical-slide-block {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 0.5;
+	width: 12px;
+	border-radius: 6px;
+	background-color: #555;
+}
+
+.hide-div-class {
+	display: none;
+	position: absolute;
+}

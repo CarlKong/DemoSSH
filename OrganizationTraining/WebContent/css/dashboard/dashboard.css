@@ -1,0 +1,60 @@
+#header_body {
+	height: 110px !important;
+}
+
+#header_crumbs {
+	height: 10px !important;
+}
+
+.div_margin_top {
+	margin-top: 20px;
+}
+
+.dashboard_Contrainer {
+	margin: 0 10px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.dashboard_left_contrainer {
+	float: left;
+	width: 400px;
+}
+
+.dashboard_right_contrainer {
+	float: right;
+	width: 520px;
+}
+
+.dashboard_to_do_container {
+	height: 400px;
+}
+
+.dashboard_new_publish_container {
+	height: 330px;
+}
+
+.dashboard_manager_contrainer {
+	height: 150px;
+	margin-bottom: 20px;
+	border: 1px solid red;
+	display: none;
+}
+
+.dashboard_trainer_trainee {
+	height: 300px;
+	border: 1px solid red;
+}
+
+.assessment_container {
+	display: none;
+}
+
+.message_span {
+	display: none;
+}
+
+.common_checkbox {
+    margin-right: 20px;
+}

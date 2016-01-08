@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+#trainee2plan_popup .assessment_popup_div {
+	width: 560px !important;
+}
+
+#trainee2plan_popup .assessment_popup_titile {
+	width: 560px;
+}
+
+#trainee2plan_popup .assess_title_middle {
+	width: 510px;
+}
+
+#trainee2plan_popup .assessment_item {
+	width: 520px;
+}
+
+#trainee2plan_popup .item_default_60 {
+	height: 120px;
+}
+
+#trainee2plan_popup .star_div {
+	margin-top: 20px;
+	width: 140px;
+}
+
+#trainee2plan_popup .star_div img{
+	margin-right: 4px;
+	margin-left: 1px;
+}
+
+#trainee2plan_popup .assess_comment {
+	width: 508px;
+	height: 88px;
+}
+
+.assess_item_60 .validateDiv_trainee2plan{
+	float:right;
+	margin-left:360px;
+	width:140px;
+	height:60px;
+	visibility: hidden;
+	position: absolute;
+}
+.assess_item_60 .validateStar{
+	width:22px;
+	height:60px;
+	margin-right:3px;
+	background:url("../../image/assessment/IMG_Star_Unrated_22x22.png") center center no-repeat;
+	cursor:pointer;
+	float:left;
+}
+
+.assess_item_60 star_div{
+}
+
+#form_trainee2plan .assessment_textarea .tipDiv{
+	margin-left:6px;
+	margin-top:-96px;
+}

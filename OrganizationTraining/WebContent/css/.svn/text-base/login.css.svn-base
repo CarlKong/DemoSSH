@@ -1,0 +1,216 @@
+@CHARSET "UTF-8";
+.clear{
+ clear: both;
+}
+
+body {
+    margin-top: 0px;
+}
+
+input:FOCUS {
+	outline: none;
+}
+
+#container {
+	width:1280px;
+	margin:0;
+	padding:0;
+	text-align: center;
+	margin:0 auto;
+}
+
+#headDiv{
+	position:relative;
+	height:100px;
+	margin:0;
+	padding:0;
+	width:1280px;
+	background:url(../image/login/headback.png) repeat-y;
+}
+
+#logoDiv{
+	position:relative;
+	float:left;
+	margin:10px 0 10px 40px;
+	height:80px;
+}
+
+#logo{
+	width:370px;
+	height:60px;
+	position:relative;
+	background:url(../image/login/logo.png) no-repeat;
+	float: left;
+}
+#systemDescription{
+	font-size:18px;
+	color: #FFFFFF;
+	text-align: left;
+	float: left;
+}
+
+#lanDiv{
+ width:1240px;
+ position: relative;
+ text-align: right;
+}
+
+.englishBtn{
+ position:relative;
+ background: transparent;
+ width: 70px;
+ height: 20px;
+ cursor:pointer;
+ color:#FFFFFF;
+ border:0;
+ padding-right:5px;
+}
+.chineseBtn{
+  border:0;
+  background: transparent;
+  font-family:'宋体';
+  color:#FFFFFF;
+  cursor:pointer;
+  width: 70px;
+  height: 20px;
+  margin-right: 40px;
+}
+
+#loginContext{
+	margin-top: 115px;
+}
+
+#headBottom{
+ height: 15px;
+ text-align: center;
+ background: url("../image/login/IMG_Shadow_1226x15.png") no-repeat;
+}
+
+#loginFormLeft{
+ float: left;
+ margin-left: 80px;
+}
+
+#loginFormRight{
+   margin-top:46px;
+   margin-right:75px;
+   float: right;
+}
+
+#loginForm{
+ background-color:#FAFAFA;
+ border:1px solid #23A5E3;
+ height: 305px;
+ width: 420px;
+}
+
+#loginFormTitle{
+  display:inline-block;
+  width:420px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+  color:#fff;
+  background: url("../image/login/BKG_Login-Header_420x40.png") no-repeat;
+  margin-bottom: 5px;
+}
+
+.loginFormP{
+ height: 60px;
+ margin: 20px 0 0 0;
+ padding: 0 59px;
+ width: 300px;
+}
+
+.loginFormP label{
+ display: block;
+ height: 18px;
+ width: 300px;
+ text-align: left;
+ font-size: 18px;
+ color: #555555;
+}
+
+.loginFormP input{
+ height: 20px;
+ width: 280px;
+ background: url("../image/login/IPX _Login_300x30.png") no-repeat;
+ font-size: 14px;
+ border: 0;
+ margin: 10px 0 0 0;
+ padding: 6px 10px 2px 10px;
+ color: #555555;
+}
+
+.loginFormBottom{
+ text-align: center;
+ margin-top: 10px;
+}
+
+.loginFormBottom span{
+ display:inline-block;
+ height: 10px;
+ width: 380px;
+ text-align: center;
+ background: url("../image/login/IMG_Shadow_380x10.png") no-repeat;
+}
+
+#loginFomrSubmit{
+ background: url("../image/login/BTN _Login_100x30.png") no-repeat;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ margin-top:10px;
+ border:0 none;
+ color:#FFFFFF;
+ font-size: 18px;
+ font-weight: bolder;
+}
+
+.loginFormShadow{
+ float:right;
+}
+
+#shadowMiddle{
+ background: url("../image/login/IMG_Shadow_420x30.png") no-repeat;
+ width: 420px;
+ height: 30px;
+ float:right;
+ margin-top:16px;
+ margin-right: 75px;
+}
+
+#loginMess{
+ height: 20px;
+}
+
+#loginMessSpan{
+ text-align:left;
+ margin-left:60px;
+ width: 380px;
+ color: #f00;
+ margin-top: 5px;
+ display: inline-block;
+}
+
+#passwordEncode {
+	display: none;
+}
+
+#footer{
+	width:1280px;
+	height:20px;
+	background:url(../image/login/footer.png) repeat-y;
+	text-align: center;
+	font-size:12px;
+	color:#FFFFFF;
+	padding-top:4px;
+	margin-top: 10px;
+}
+
+#shadowDiv{
+	margin-top:100px;
+	height:15px;
+	background:url(../image/login/shadow.png) no-repeat;
+}
+

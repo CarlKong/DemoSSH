@@ -1,0 +1,231 @@
+@CHARSET "UTF-8";
+
+.assessment_popup {
+	display: none;
+	width: 100%;
+	position: absolute;
+	z-index: 101;
+}
+
+.assessment_popup_div {
+	position: relative;
+	background-color: #ffffff !important;
+}
+
+.assessment_popup_titile {
+	height: 30px;
+	line-height: 30px;
+	background: url(../../image/assessment/IMG_Tab_Middle_1x30.png);
+}
+
+.feedback {
+	margin-left: 20px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.closePic {
+	width: 11px;
+	height: 30px;
+	background: url(../../image/buttonIMG/ICN_Close_11x11.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	margin-right: 20px;
+	float: right;
+}
+
+.assessment_popup_content {
+	
+}
+
+.title_part {
+	
+}
+
+.title_part_content {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.title_name {
+	display: inline;
+	font-weight: bold;
+}
+
+.title_id {
+	display: inline;
+	font-size: 12px;
+}
+
+.assessment_part {
+	padding-left: 20px;
+}
+
+.assessment_title {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #61BBDD;
+	text-align: center;
+	font-weight: bold;
+}
+
+.assess_title_left {
+	float: left;
+	width: 5px;
+	height: 30px;
+	background: url(../../image/assessment/IMG_Title_2_Left_5x30.png);
+}
+
+.assess_title_middle {
+	float: left;
+	height: 30px;
+	background: url(../../image/assessment/IMG_Title_2_1x30.png);
+}
+
+.assess_title_right {
+	float: left;
+	width: 5px;
+	height: 30px;
+	background: url(../../image/assessment/IMG_Title_2_Right_5x30.png);
+}
+
+.assessment_item {
+	
+}
+
+.data_default {
+	
+}
+
+.item_default_60 {
+	background: url(../../image/assessment/IMG_List_1x60.png);
+}
+
+.item_default_30 {
+	background: url(../../image/assessment/IMG_List_1x30.png);
+}
+
+.assess_item_60 {
+	position: relative;
+	height: 60px;
+	background: url(../../image/assessment/IMG_List_1x60.png);
+	background-position: center center;
+}
+
+.assess_item_30 {
+	position: relative;
+	height: 30px;
+	background: url(../../image/assessment/IMG_List_1x30.png);
+}
+
+.item_description_20 {
+	width: 270px;
+	margin-left: 20px;
+	margin-top: 14px;
+	float: left;
+	display: inline-block;
+}
+
+.item_description_10 {
+	width: 270px;
+	margin-left: 20px;
+	margin-top: 6px;
+	float: left;
+	display: inline-block;
+}
+
+.item_description_up {
+	font: 14px Blod "Arial";
+}
+
+.item_description_down {
+	width: 250px;
+	font: 13px Regular "Arial";
+	color: #BFBFBF;
+	overflow: hidden;
+	word-break: keep-all;
+}
+
+.star_div {
+	float: right;
+	margin-right: 20px;
+}
+
+.assessment_textarea {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.assess_comment { /*width = actual - 18
+	  height = actual - 2*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #555;
+}
+
+.button_part {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#cancel_assessment {
+	margin-left: 20px;
+}
+
+.tipDiv{
+	position:absolute;
+	font-style:normal;
+	font-size: 14px;
+	color:#BFBFBF;
+	font-family:Arial, Tahoma, Helvetica, "\5b8b\4f53", sans-serif;
+	z-index:102;
+}
+
+.validateDiv_30 {
+	float: right;
+	right: 20px;
+	width: 140px;
+	height: 30px;
+	display: none;
+	position: absolute;
+}
+
+.validateStar_30 {
+	width: 22px;
+	height: 30px;
+	margin-right: 3px;
+	background: url("../../image/assessment/IMG_Star_Unrated_22x22.png")center center no-repeat;
+	cursor: pointer;
+	float: left;
+}
+
+.validateDiv_60 {
+	float: right;
+	right: 20px;
+	width: 140px;
+	height: 60px;
+	display: none;
+	position: absolute;
+}
+
+.validateStar_60 {
+	width: 22px;
+	height: 60px;
+	margin-right: 3px;
+	background: url("../../image/assessment/IMG_Star_Unrated_22x22.png")center center no-repeat;
+	cursor: pointer;
+	float: left;
+}
+
+.closePic {
+	width: 11px;
+	height: 11px;
+	background: url(../../image/buttonIMG/ICN_Close_11x11.png) no-repeat;
+	cursor: pointer;
+	margin-right: 20px;
+	float: right;
+	margin-top: 9.5px;
+}

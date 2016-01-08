@@ -1,0 +1,171 @@
+body {
+	position: relative;
+	background-color: #ffffff;
+}
+
+.editPlanCourseDiv,.editPlanCourseTitle,Div.editPlanCourseTitle>span,.editPlanCourseContent
+	{
+	position: relative;
+}
+
+.editPlanCourseDiv {
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white url("../../image/commonIMG/IMG_Background_4x4.png");
+}
+
+.editPlanCourseTitle {
+	width: 760px;
+}
+
+.editPlanCourseTitle {
+	height: 30px;
+	background-color: #71B3D6;
+	text-align: left;
+}
+
+Div.editPlanCourseTitle>span.editPlanCourseTitleName {
+	font-family: Arial;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+Div.editPlanCourseTitle>span.editPlanCourseTitleClose {
+	width: 11px;
+	height: 11px;
+	background-image: url("../../image/buttonIMG/ICN_Close_11x11.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	cursor: pointer;
+}
+
+.editPlanCourseContent {
+	width: 760px;
+	text-align: left;
+	height: auto;
+}
+
+.editPlanCoursePopUp {
+	position: absolute;
+	z-index: 200;
+	display: none;
+	background: url("../../image/commonIMG/IMG_Background_4x4.png");
+	-webkit-box-shadow: 5px 5px 5px #909090;
+	margin-left: 120px;
+	margin-right: auto;
+}
+
+.course_cancel_btn {
+	background-color: ( "../../image/buttonIMG/BTN_Cancel_80x30.png" );
+}
+
+.editPlanCourseType {
+	margin-bottom: 4px;
+}
+
+/*only for edit plan course style*/
+.editPlanCourseContent .courseContent {
+	padding: 10px 0;
+}
+
+.editPlanCourseContent .content_layout_line {
+	width: 760px;
+	margin-bottom: 10px;
+}
+
+.editPlanCourseContent .line_content {
+	position: relative;
+	margin-left: 60px;
+	vertical-align: top;
+}
+
+.editPlanCourseContent #courseBrief {
+	width: 448px;
+	height: 49px;
+}
+
+.editPlanCourseContent #course_brief_height {
+	height: 80px;
+}
+
+.editPlanCourseContent #courseTargetPeople {
+	width: 448px;
+	height: 36px;
+}
+
+.editPlanCourseContent #course_targetTrainee_height {
+	height: 50px;
+}
+
+.editPlanCourseContent .duration {
+	width: 455px;
+}
+
+.editPlanCourseContent .duration .line_content_right {
+	width: 155px;
+}
+
+.editPlanCourseContent .author {
+	width: 305px;
+	position: absolute;
+	top: 200px;
+	right: 90px;
+}
+
+.editPlanCourseContent .author .line_content {
+	margin-left: 0;
+}
+
+.editPlanCourseContent .author .line_content_left {
+	width: 70px;
+}
+
+.editPlanCourseContent .author .line_content_right {
+	width: 235px;
+}
+
+.editPlanCourseContent .author .line_content_right .input_txt {
+	width: 143px;
+}
+
+.editPlanCourseContent .course_attachmentList {
+	margin-left: 60px;
+}
+
+.editPlanCourseContent #course_type_line {
+	height: 40px;
+}
+
+.editPlanCourseContent .common_radio {
+	padding-bottom: 0px;
+}
+
+.editPlanCourseContent #line_content_tag {
+	height: 46px;
+}
+
+.editPlanCourseContent #line_tag_notice {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	top: 6px;
+	left: 5px;
+}
+
+.editPlanCourseContent #course_add_attachment {
+	height: 15px;
+	line-height: 0px;
+}
+
+.editPlanCoursePopUp .edit_course_btn {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+}

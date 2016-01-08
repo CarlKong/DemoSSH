@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.edit_course_btn {
+	height: 30px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#course_save_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+}
+
+#course_saveAS_btn {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	margin-left: 20px;
+}

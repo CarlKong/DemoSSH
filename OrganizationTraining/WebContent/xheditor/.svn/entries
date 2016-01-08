@@ -1,0 +1,55 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/xheditor
+http://192.168.1.100/InternalApp/svn
+
+
+
+2012-11-26T23:54:33.875674Z
+21978
+owen.hou
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+xheditor-1.1.12-en.js
+file
+
+
+
+
+2013-06-27T03:14:04.945724Z
+6a8d1686bdd3e5c7cd15b97d09b8d7f3
+2012-11-26T23:54:33.875674Z
+21978
+owen.hou
+
+xheditor_skin
+dir
+
+xheditor-1.1.12-zh-cn.js
+file
+
+
+
+
+2013-06-27T03:14:04.945724Z
+e42c91ae45490e6e9cdf36fe514d2780
+2012-11-26T23:54:33.875674Z
+21978
+owen.hou
+

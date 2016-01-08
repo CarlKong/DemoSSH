@@ -1,0 +1,67 @@
+8
+
+dir
+30275
+http://192.168.1.100/InternalApp/svn/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/css
+http://192.168.1.100/InternalApp/svn
+
+
+
+2013-03-29T10:15:41.286332Z
+28834
+margaret.wang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c7c969-31b5-0410-8a2d-1f3b99e17472
+
+login.css
+file
+
+
+
+
+2013-06-27T03:14:13.443473Z
+f630b574c0628e6fa2b0aac8a6575733
+2013-03-27T02:18:55.647167Z
+28715
+jackson.mu
+
+course
+dir
+
+assessment
+dir
+
+search
+dir
+
+dashboard
+dir
+
+common
+dir
+
+base
+dir
+
+plan
+dir
+
+headAndFoot
+dir
+
+roleList
+dir
+

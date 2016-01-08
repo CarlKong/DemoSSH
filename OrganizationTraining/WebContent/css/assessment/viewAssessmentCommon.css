@@ -1,0 +1,349 @@
+@CHARSET "UTF-8";
+
+.assessment_left {
+	width: 160px;
+	float: left;
+	color: #71B3D6;
+}
+
+.left_menu_div {
+	margin-top: 20px;
+}
+
+.parent_menu, .child_menu {
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.parent_menu {
+	width: 140px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.child_menu {
+	width: 135px;
+	padding-left: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.child_menu_div {
+	width: 140px;
+	margin-top: 5px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.selected_menu {
+	background: url(../../image/assessment/IMG_Selected_BG_140x20.png) no-repeat;
+}
+
+.split_line {
+	float: left;
+	display: inline-block;
+	width: 4px;
+	min-height: 500px;
+	background: url(../../image/assessment/IMG_Border_4x1.png) repeat-y;
+}
+
+.assessment_content {
+	float: left;
+	width: 796px;
+}
+
+.assessment_value_part {
+	width: 760px;
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	margin-left: 16px;
+	border-bottom: 1px solid #C0E1ED;
+}
+
+.assessed_object {
+	width: 780px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.assessed_object_name {
+	font-weight: bold;
+}
+
+.item_name_div {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 140px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.item_score_div {
+	margin-top: 6px;
+	float: left;
+	margin-right: 10px;
+}
+
+.item_rate_div {
+	margin-right: 10px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+}
+
+.assessor_name {
+	width: 160px;
+	height: 25px;
+	line-height: 23px;
+	float: left;
+	font-weight: bold;
+}
+
+.item_score_value {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 30px;
+}
+
+.comments_div {
+	width: 760px;
+}
+
+.light_star, .half_star, .gray_star {
+	float: left;
+	margin-left: 2px;
+	height: 13px;
+	width: 13px;
+	display: inline-block;
+}
+
+.light_star {
+	background: url(../../image/assessment/IMG_Star_Active_13x13.png) no-repeat;
+}
+
+.half_star {
+	background: url(../../image/assessment/IMG_Half_Star_Active_13x13.png) no-repeat;
+}
+
+.gray_star {
+	background: url(../../image/assessment/IMG_Star_13x13.png) no-repeat;
+}
+
+.trainee_attended, .trainee_absent, .trainee_leave, .trainee_late {
+	display: inline-block;
+	width: 20px;
+	height: 19px;
+	margin-left: 10px;
+}
+
+.trainee_attended {
+	background: url(../../image/assessment/ICN_Attended_Active_20x19.png) no-repeat;
+}
+
+.trainee_absent {
+	background: url(../../image/assessment/ICN_Absent_Active_20x19.png) no-repeat ;
+}
+
+.trainee_leave {
+	background: url(../../image/assessment/ICN_ApplyLeave_Active_20x19.png) no-repeat;
+}
+
+.trainee_late {
+	background: url(../../image/assessment/ICN_Late_Active_20x19.png) no-repeat;
+}
+
+.subtitle {
+	margin-left: 6px;
+	width: 770px;
+	height:24px;
+	color: #71B3D6;
+	font-weight:bold;
+	line-height: 24px;
+	padding-left: 10px;
+	background: url(../../image/assessment/IMG_Title_BG_780x24.png) no-repeat;
+	position: relative;
+}
+
+
+.subtitle_expand, .subtitle_fold {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	width: 12px;
+	height: 7px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.subtitle_expand {
+	background: url(../../image/assessment/ICN_Expand_12x7.png) no-repeat;
+}
+
+.subtitle_fold {
+	background: url(../../image/assessment/ICN_Fold_12x7.png) no-repeat;
+}
+
+.plan_course_expand, .plan_course_fold {
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.plan_course_expand {
+	background: url(../../image/assessment/IMG_Expand_2_20x20.png) no-repeat;
+}
+
+.plan_course_fold {
+	background: url(../../image/assessment/IMG_Fold_2_20x20.png) no-repeat;
+}
+
+/**pagination**/
+.view_assessment_page {
+	display: inline-block;
+	padding: 10px 0 20px 0;
+	float: right;
+	margin-right: 20px;
+}
+
+.view_assessment_page a {
+	color: #555;
+	text-decoration: none;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	float: left;
+}
+
+.first_page_disable {
+	cursor: default;
+	background-image:url(../../searchList/images/BTN_First_Disable_24x24.png);
+}
+
+.first_page_active {
+	background-image:url(../../searchList/images/BTN_First_24x24.png);
+}
+
+.previous_page_disable {
+	cursor: default;
+	margin-left: 5px;
+	background-image:url(../../searchList/images/BTN_Previous_Disable_24x24.png);
+}
+
+.previous_page_active {
+	margin-left: 5px;
+	background-image:url(../../searchList/images/BTN_Previous_24x24.png);
+}
+
+.next_page_disable {
+	cursor: default;
+	margin-right: 5px;
+	background-image:url(../../searchList/images/BTN_Next_Disable_24x24.png);
+}
+
+.next_page_active {
+	margin-right: 5px;
+	background-image:url(../../searchList/images/BTN_Next_24x24.png);
+}
+
+.last_page_disable {
+	cursor: default;
+	background-image:url(../../searchList/images/BTN_Last_Disable_24x24.png);
+}
+
+.last_page_active {
+	background-image:url(../../searchList/images/BTN_Last_24x24.png);
+
+}
+
+.current_page {
+	font-weight: bold;
+	cursor: default;
+}
+
+/* modify */
+.objectAndAverage {
+	width: 780px;
+	border-bottom: 1px solid #C0E1ED;
+	color: #71B3D6;
+	opacity: 1;
+	background-color: #eaf5f9;
+	border-radius: 2px;
+	margin-left: 6px; 
+	margin-top: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.assessment_avarage_value_part {
+	width: 780px;
+	display: inline-block;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.averageItem_name {
+	float: left;
+	margin-left: 10px;
+	margin-right: 45px;
+}
+
+.have_not_assess_button {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url(../../image/assessment/BTN_Have-not-commented_16x16.png) no-repeat;
+	top: 7px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.show_employee_name_div {
+	width: 125px;
+	padding: 10px 10px 10px 10px;
+	background-color: #FFF;
+	border-radius: 2px;
+	border: 1px solid #bfbfbf;
+	position: absolute;
+	z-index: 2;
+	top: 24px;
+	right: 10px;
+	display: none;
+}
+
+.show_employee_name_head {
+	width: 125px;
+	text-align: center;
+	color: #418fb5;
+}
+
+.show_employee_name_content {
+	width: 125px;
+	color: #555555;
+	font-size: 12px;
+}
+
+.prifixClass {
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #418fb5;
+	display: inline-block;
+	margin-bottom: 2.5px;
+	margin-right: 6px;
+}
+
+.needNotAssessInfo {
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}

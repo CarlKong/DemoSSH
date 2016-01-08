@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/InternalApp/svn/!svn/ver/28834/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/InternalApp/svn/!svn/ver/28834/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/applicationContext.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/InternalApp/svn/!svn/ver/28726/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/web.xml
+END
+rest-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/InternalApp/svn/!svn/ver/28591/OrganizationTraining/OT2/branches/Package_1.0/OrganizationTraining/WebContent/WEB-INF/rest-servlet.xml
+END

@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+#trainer2plan_popup .assessment_popup_div {
+	width: 560px !important;
+}
+
+#trainer2plan_popup .assessment_popup_titile {
+	width: 560px;
+}
+
+#trainer2plan_popup .assess_title_middle {
+	width: 510px;
+}
+
+#trainer2plan_popup .assessment_item {
+	width: 520px;
+}
+
+#trainer2plan_popup .item_default_60 {
+	height: 180px;
+}
+
+#trainer2plan_popup .star_div {
+	margin-top: 20px;
+}
+
+#trainer2plan_popup .assess_comment {
+	width: 508px;
+	height: 88px;
+}
+
+#form_trainer2plan .assessment_textarea .tipDiv {
+	margin-left: 6px;
+	margin-top: -96px;
+}
+
+#trainer2plan_popup .star_div img {
+	margin-right: 4px;
+	margin-left: 1px;
+}

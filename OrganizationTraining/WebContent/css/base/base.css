@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+/*
+Be careful to use, each page will load it, and keep clean.
+*/
+
+.clear{
+    clear: both;
+}
+
+a:FOCUS, span:FOCUS, DIV:FOCUS{
+    outline: none;
+}
+
+.content{
+    width: 960px;
+    background: url("../../image/commonIMG/IMG_Background_4x4.png") transparent;
+    position: relative;
+    margin: 0 auto;
+}
+
+input[type=text], textarea {
+    border-color: #BFBFBF;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    /*-webkit-box-shadow: inset 0 0 5px #BFBFBF;*/
+    -webkit-border-radius: 2px;
+    /*-moz-box-shadow: inset 0 0 5px #BFBFBF;*/
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    /*box-shadow: inset 0 0 5px #BFBFBF;*/
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input_txt{
+    width: 448px;
+    height: 16px; /* height = font-size+2, line-height = height+1, real_height = padding-top+padding-button+2+height*/
+    line-height: 17px;
+    padding: 6px 2px;
+}
+
+a.decoration_hover:hover{
+    text-decoration: underline;
+}
+
+a.a_common_button{
+    position: relative;
+    display: inline-block;
+    cursor:pointer;
+    text-align: center;
+}
+
+a.a_common_button span{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+a.a_create_button{
+	width: 80px;
+    height: 30px;
+    background: url("../../image/buttonIMG/BTN_Create_80x30.png") transparent no-repeat;
+}
+
+a:hover.a_create_button{
+    width: 80px;
+    height: 30px;
+    background: url("../../image/buttonIMG/BTN_Create_Hover_80x30.png") transparent no-repeat;
+}
+
+a.a_create_button span{
+    height: 28px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 28px #419025;
+}
+
+a.a_create_button_hover{
+    width: 79px;
+    height: 29px;
+    background: url("../../image/buttonIMG/BTN_Create_80x30.png") transparent no-repeat;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+a.a_create_button_hover span{
+    height: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 27px #419025;
+}
+
+a.a_cancel_button{
+    width: 80px;
+    height: 30px;
+    background: url("../../image/buttonIMG/BTN_Cancel_80x30.png") transparent no-repeat;
+}
+
+a:hover.a_cancel_button{
+    width: 80px;
+    height: 30px;
+    background: url("../../image/buttonIMG/BTN_Cancel_Hover_80x30.png") transparent no-repeat;
+}
+
+a.a_cancel_button span{
+    height: 28px;
+    line-height: 30px;
+    color: #808080;
+    text-shadow: 1px -1px 28px #FFFFFF;
+}
+
+a.a_cancel_button_hover{
+    width: 79px;
+    height: 29px;
+    background: url("../../image/buttonIMG/BTN_Cancel_80x30.png") transparent no-repeat;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+a.a_cancel_button_hover span{
+    height: 27px;
+    line-height: 30px;
+    color: #808080;
+    text-shadow: 1px -1px 27px #FFFFFF;
+}
+
+.notice_font{
+    font-size: 12px;
+    color: #808080;
+}
